@@ -1,4 +1,4 @@
-version: "3.0"
+version: "3.8"
 services:
   elasticsearch:
     container_name: es-container
@@ -6,11 +6,16 @@ services:
     environment:
       - xpack.security.enabled=false
       - "discovery.type=single-node"
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
     ports:
       - 9200:9200
     volumes:
-      - esdata:/usr/share/elasticsearch/data
+        - type: volume
+          source: esdata
+          target: /usr/share/elasticsearch/data
+          tmpfs:
+            size: 100000
 
 volumes:
   esdata:
-    driver: local
+    external: true

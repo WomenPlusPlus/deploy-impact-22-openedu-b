@@ -30,10 +30,10 @@ func ConnectPG(ctx context.Context, pgpath string, logger *zap.Logger) (*PGDB, e
 }
 
 type ProjectData struct {
-	by          pgtype.Varchar
-	title       pgtype.Varchar
-	link        pgtype.Varchar
-	description pgtype.Varchar
+	By          pgtype.Varchar `json:"by"`
+	Title       pgtype.Varchar `json:"title"`
+	Link        pgtype.Varchar `json:"link"`
+	Description pgtype.Varchar `json:"description"`
 }
 
 func (db *PGDB) ReadProject(ctx context.Context) ([]ProjectData, error) {
@@ -47,7 +47,7 @@ func (db *PGDB) ReadProject(ctx context.Context) ([]ProjectData, error) {
 
 	for row.Next() {
 		var r ProjectData
-		err = row.Scan(&r.by, &r.title, &r.link, &r.description)
+		err = row.Scan(&r.By, &r.Title, &r.Link, &r.Description)
 		if err != nil {
 			db.log.Error("Select row failed:", zap.Error(err))
 			return nil, err
