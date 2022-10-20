@@ -46,3 +46,4 @@ Thumbs.db
 .vscode/
 .env
 __debug_bin
+.DS_Store
