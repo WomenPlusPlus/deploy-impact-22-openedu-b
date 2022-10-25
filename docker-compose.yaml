@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3.3"
 services:
   elasticsearch:
     container_name: es-container
@@ -10,12 +10,8 @@ services:
     ports:
       - 9200:9200
     volumes:
-        - type: volume
-          source: esdata
-          target: /usr/share/elasticsearch/data
-          tmpfs:
-            size: 100000
+      - esdata:/usr/share/elasticsearch/data
 
 volumes:
   esdata:
-    external: true
+      external: true

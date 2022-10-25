@@ -11,7 +11,7 @@ import (
 	"syscall"
 )
 
-var endpoint string = "localhost:8087"
+var endpoint string = "0.0.0.0:8087"
 
 func main() {
 
