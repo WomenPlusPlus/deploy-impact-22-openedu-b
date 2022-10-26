@@ -30,7 +30,7 @@ services:
     hostname: postgres
     image: postgres:14
     ports:
-      - 5432:5432
+      - 2345:5432
     volumes:
       - "./db:/docker-entrypoint-initdb.d"
       - "./pg_data:/var/lib/postgresql/data"

@@ -6,7 +6,7 @@ import (
 	//"encoding/json"
 	"fmt"
 	"io"
-	//"os"
+	"os"
 	"strings"
 
 	"github.com/elastic/go-elasticsearch/v8"
@@ -25,7 +25,7 @@ func ConnectES(ctx context.Context, logger *zap.Logger) (*ESDB, error) {
 	db := ESDB{
 		log: logger,
 	}
-	/*esHost := os.Getenv("ES_HOST")
+	esHost := os.Getenv("ES_HOST")
 	if esHost == "" {
 		esHost = "http://localhost:9200"
 	}
@@ -33,7 +33,7 @@ func ConnectES(ctx context.Context, logger *zap.Logger) (*ESDB, error) {
 	cfg := elasticsearch.Config{
 		Addresses: []string{esHost},
 	}
-	es, err := elasticsearch.NewClient(cfg)*/
+	es, err := elasticsearch.NewClient(cfg)
 	es, err := elasticsearch.NewDefaultClient()
 	if err != nil {
 		db.log.Error("failed connect to elastic", zap.Error(err))
