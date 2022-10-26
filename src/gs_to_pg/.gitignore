@@ -49,3 +49,4 @@ __debug_bin
 .DS_Store
 token.json
 credentials.json
+.DS_Store/
