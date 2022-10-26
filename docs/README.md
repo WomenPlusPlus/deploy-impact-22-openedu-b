@@ -7,7 +7,7 @@ fully-managed versions of them in case the whole infrastructure will be located 
 
 Architecture overview:
 
-![architecture](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/docs/arc.jpg?raw=true)
+![architecture](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/blob/main/docs/arc.jpg?raw=true)
 
 
 - [/src](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/src): has all code. 
