@@ -7,15 +7,15 @@ fully-managed versions of them in case the whole infrastructure will be located 
 
 Architecture overview:
 
-![architecture](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/blob/main/arc.jpg?raw=true)
+![architecture](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/docs/arc.jpg?raw=true)
 
 
-- [/src](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/blob/main): has all code. 
+- [/src](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/src): has all code. 
 It has individual folders corresponding to separate microservices. 
 Some microservices are just made for one time run, but can be extendet to be triggered, 
 for example by Queing Services (RabbitMQ, Pub/Sub etc.)
 
-- [/test](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/blob/main): docker-compose file.
+- [/test](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/test): docker-compose file.
 It can be run anywhere and should start the basic infrastructure of our project with the main API running on:
 localhost:8087
 
