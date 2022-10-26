@@ -34,7 +34,6 @@ func ConnectES(ctx context.Context, logger *zap.Logger) (*ESDB, error) {
 		Addresses: []string{esHost},
 	}
 	es, err := elasticsearch.NewClient(cfg)
-	es, err := elasticsearch.NewDefaultClient()
 	if err != nil {
 		db.log.Error("failed connect to elastic", zap.Error(err))
 	}
