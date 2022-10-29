@@ -7,6 +7,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strings"
 
 	"go.uber.org/zap"
 	"golang.org/x/oauth2"
@@ -107,9 +108,11 @@ type GSData struct {
 	Description string
 	Author      string
 	Type        string
+	Subject     string
+	Skills      string
 }
 
-func (db *GSDB) ReadFromSheet(spreadsheetId string, readRange string) ([][]interface{}, error) {
+func (db *GSDB) ReadFromIndividualSheet(spreadsheetId string, readRange string) ([][]interface{}, error) {
 	resp, err := db.conn.Spreadsheets.Values.Get(spreadsheetId, readRange).Do()
 	if err != nil {
 		db.log.Error("Unable to retrieve data from sheet", zap.Error(err))
@@ -131,7 +134,55 @@ func (db *GSDB) ReadFromSheet(spreadsheetId string, readRange string) ([][]inter
 			if len(row) > 6 {
 				gsd.Title = row[6].(string)
 			}
-			data = append(data, []interface{}{gsd.Link, gsd.Title, gsd.Description, gsd.Author, gsd.Type})
+			data = append(data, []interface{}{gsd.Link, gsd.Title,
+				gsd.Description, gsd.Author,
+				gsd.Type, gsd.Subject, gsd.Skills})
+
+		}
+	}
+
+	return data, nil
+}
+
+func (db *GSDB) ReadFromOpeneduSheet(spreadsheetId string, readRange string) ([][]interface{}, error) {
+	resp, err := db.conn.Spreadsheets.Values.Get(spreadsheetId, readRange).ValueRenderOption("FORMULA").Do()
+	if err != nil {
+		db.log.Error("Unable to retrieve data from sheet", zap.Error(err))
+		return nil, err
+	}
+
+	data := [][]interface{}{}
+
+	if len(resp.Values) == 0 {
+		db.log.Warn("No data found.")
+	} else {
+		for _, row := range resp.Values {
+			var (
+				link, title string
+			)
+			r0 := row[0].(string)
+			if strings.Contains(r0, "HYPERLINK") {
+				ss := strings.Split(r0, ",")
+				link = strings.Trim(strings.Trim(ss[0], "=HYPERLINK("), "\"")
+				title = strings.Trim(strings.Trim(ss[1], ")"), "\"")
+			} else {
+				link = ""
+				title = r0
+			}
+			gsd := GSData{Link: link,
+				Title:       title,
+				Description: row[1].(string)}
+			if len(row) > 5 {
+				gsd.Author = row[5].(string)
+			}
+			if len(row) > 15 {
+				gsd.Subject = row[15].(string)
+			}
+			if len(row) > 16 {
+				gsd.Skills = row[16].(string)
+			}
+			data = append(data, []interface{}{gsd.Link, gsd.Title, gsd.Description,
+				gsd.Author, gsd.Type, gsd.Subject, gsd.Skills})
 
 		}
 	}
