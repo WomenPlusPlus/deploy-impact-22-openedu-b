@@ -1,0 +1,2545 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://webprotege.stanford.edu", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "prefixList" : {
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "webprotege" : "http://webprotege.stanford.edu/",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "" : "urn:webprotege:ontology:9115a228-0dba-43a3-8e59-fcd393f7ec50#",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri" : "urn:webprotege:ontology:9115a228-0dba-43a3-8e59-fcd393f7ec50"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "133",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "153",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "167",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://webprotege.stanford.edu/RBAVOu3iqFQ7el89a2fkmBw",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RBAVOu3iqFQ7el89a2fkmBw",
+      "en" : "Related Projects"
+    },
+    "subClasses" : [ "2", "3", "4" ],
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R78wS98QdqSdvvhsxAjHqYr",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R78wS98QdqSdvvhsxAjHqYr",
+      "en" : "Link"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "8", "6" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDsi1mhD5j1gjDcX9j8BYkv",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDsi1mhD5j1gjDcX9j8BYkv",
+      "en" : "WikiVoyage"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9CyHRLMlIl1Gz7t2ZqLpja",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R9CyHRLMlIl1Gz7t2ZqLpja",
+      "en" : "Partner"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/R7deWatHBPIVTBeXFYljVvP",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R7deWatHBPIVTBeXFYljVvP",
+        "en" : "Wikidata"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RCM4lbMTTt2dpmPdlh3Aqfo",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RCM4lbMTTt2dpmPdlh3Aqfo",
+        "en" : "WikiEdu"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RFkqEBntzedisMH36a0Qzt",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RFkqEBntzedisMH36a0Qzt",
+        "en" : "OpenStreetMap"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R8UcjDaB4aiNi7i89ZUoEX8",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R8UcjDaB4aiNi7i89ZUoEX8",
+        "en" : "Universities"
+      }
+    } ],
+    "subClasses" : [ "12" ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R8dJj5rAwCfLfAEuDsYoNdE",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R8dJj5rAwCfLfAEuDsYoNdE",
+      "en" : "Duration"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/R9hDvuMcYjqI0gvQHs48MPV",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R9hDvuMcYjqI0gvQHs48MPV",
+        "en" : "< 1d"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R9B5Ktnb3ybeMSsUvtbQOLH",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R9B5Ktnb3ybeMSsUvtbQOLH",
+        "en" : "> 1m"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R4W5pCayKJczYOhK4Xs0Dq",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R4W5pCayKJczYOhK4Xs0Dq",
+        "en" : "< 1w"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R8ufAOfpSD5y1iWtMAUypva",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R8ufAOfpSD5y1iWtMAUypva",
+        "en" : "< 1m"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "instances" : 0,
+    "union" : [ "8", "6" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "15",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R1IBrSWXmUBrXlotN2zcX9",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R1IBrSWXmUBrXlotN2zcX9",
+      "en" : "Editathon"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R8ouu4tLJBoGMxvEiIKj42u",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R8ouu4tLJBoGMxvEiIKj42u",
+      "en" : "WikiMedia"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/R8iMPCjZlCoZR0gP6rrXVdA",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R8iMPCjZlCoZR0gP6rrXVdA",
+        "en" : "CH"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RCEvN7RuMJk34ZEiLY4rnUX",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RCEvN7RuMJk34ZEiLY4rnUX",
+        "en" : "EE"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RBi1CQAquTgUvf5hcogO82Q",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RBi1CQAquTgUvf5hcogO82Q",
+        "en" : "DE"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R7JtlRMfx5ksOSyU8sDyfBV",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R7JtlRMfx5ksOSyU8sDyfBV",
+        "en" : "FR"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RDjcQxrR1Kr863XO2i254a2",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RDjcQxrR1Kr863XO2i254a2",
+        "en" : "Foundation"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RJJMBlQZDxGDv5GTghOyWn",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RJJMBlQZDxGDv5GTghOyWn",
+        "en" : "Community"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RBPfX8fvHzaD4enkQ7BPosM",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RBPfX8fvHzaD4enkQ7BPosM",
+      "en" : "Software"
+    },
+    "subClasses" : [ "36", "37", "38" ],
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R3CbSTUGcmiObas2a5cj7v",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R3CbSTUGcmiObas2a5cj7v",
+      "en" : "Text Analyser"
+    },
+    "subClasses" : [ "49", "50", "51" ],
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/Rdgwi1mbhDMvCQ9tp38Ih9",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rdgwi1mbhDMvCQ9tp38Ih9",
+      "en" : "Read only"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/RCQ60htTr1NdvzroMxXMGqO",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RCQ60htTr1NdvzroMxXMGqO",
+        "en" : "Encyclopedia"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R8uNPTWw3H35jbHDUlWCwXX",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R8uNPTWw3H35jbHDUlWCwXX",
+        "en" : "Media"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R83TvWS94kIL5EZEPKofn0p",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R83TvWS94kIL5EZEPKofn0p",
+        "en" : "Lessons"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R8nWETjkBFS9uPUeui41tqP",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R8nWETjkBFS9uPUeui41tqP",
+        "en" : "Tourism"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/Ra1VsVutDIHeFhHSXYNfjM",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "Ra1VsVutDIHeFhHSXYNfjM",
+        "en" : "DIctionnary"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R7oX4NqlssyVQ88vL8QIcf",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R7oX4NqlssyVQ88vL8QIcf",
+        "en" : "Articles"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "52",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R8ibx63WUnfnXpy33s5l6vg",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R8ibx63WUnfnXpy33s5l6vg",
+      "en" : "Skills"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/RFk9KDbKjqHuiWEL2IQm6N",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RFk9KDbKjqHuiWEL2IQm6N",
+        "en" : "Multilingual"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R9weERRCZpBKt8jgxplh3jC",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R9weERRCZpBKt8jgxplh3jC",
+        "en" : "Literacy"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R4iRJdhgDWBDvsnP1b76ES",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R4iRJdhgDWBDvsnP1b76ES",
+        "en" : "Citizenship"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RtOcf4EdqJbj2HY93SYHzh",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RtOcf4EdqJbj2HY93SYHzh",
+        "en" : "Mathematics, Science, Technology, Engineering"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RCDk5bCtcZff9fHbgDXjQf6",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RCDk5bCtcZff9fHbgDXjQf6",
+        "en" : "Entrepreneurship"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RbF9MqnDxUIJNWi19AKBhk",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RbF9MqnDxUIJNWi19AKBhk",
+        "en" : "Cultural awareness and expression"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R8oYhX2TmrMA2upbwFIYpif",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R8oYhX2TmrMA2upbwFIYpif",
+        "en" : "Personal, Social, Learning to learn"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RBRFeNuBucLHT5LqGu9fove",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RBRFeNuBucLHT5LqGu9fove",
+        "en" : "Digital"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RwmxxiqXNP7GrSjhsCBAWp",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RwmxxiqXNP7GrSjhsCBAWp",
+      "en" : "Description"
+    },
+    "attributes" : [ "external" ],
+    "id" : "54",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R7zkxTQSk84ForhQXwixhMb",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R7zkxTQSk84ForhQXwixhMb",
+      "en" : "Wikipedia"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "0", "10" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9exvLWflgJssDTfVOcSFna",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R9exvLWflgJssDTfVOcSFna",
+      "en" : "Main Projects"
+    },
+    "subClasses" : [ "55", "56", "57", "58", "9", "59", "60", "3", "4", "30", "61", "62" ],
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/Rc88tCMUPCySbFknqgWcf9",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rc88tCMUPCySbFknqgWcf9",
+      "undefined" : "Recommender system"
+    },
+    "subClasses" : [ "63" ],
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RBDZrts7JoGV8c34Aqx46iw",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RBDZrts7JoGV8c34Aqx46iw",
+      "en" : "Game"
+    },
+    "attributes" : [ "external" ],
+    "id" : "69",
+    "superClasses" : [ "70" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RSFZAlmiCcOTARVcYq4ItN",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RSFZAlmiCcOTARVcYq4ItN",
+      "en" : "Mapping"
+    },
+    "attributes" : [ "external" ],
+    "id" : "78",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RgKAyQ4EU7GVbjaNTABPqv",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RgKAyQ4EU7GVbjaNTABPqv",
+      "en" : "Deliverable"
+    },
+    "attributes" : [ "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RaE3aZ2o1QdH8Fr08kbTci",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RaE3aZ2o1QdH8Fr08kbTci",
+      "en" : "Wikibooks"
+    },
+    "attributes" : [ "external" ],
+    "id" : "55",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RBPcO3slUOBEmL5SDcrPdXU",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RBPcO3slUOBEmL5SDcrPdXU",
+      "en" : "Image"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDhg2Tvo6WztzkSk8LZ8qV0",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDhg2Tvo6WztzkSk8LZ8qV0",
+      "en" : "Translator"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/Rs3QnjQMyW2dmaJn5f6aYt",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "Rs3QnjQMyW2dmaJn5f6aYt",
+        "en" : "Google Translate"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "49",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9rXnTJfgZB9G1XGLtb2652",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R9rXnTJfgZB9G1XGLtb2652",
+      "en" : "Language Recogniser"
+    },
+    "attributes" : [ "external" ],
+    "id" : "50",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9FG7XWggacNaB8MdYBegCz",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R9FG7XWggacNaB8MdYBegCz",
+      "undefined" : "Education level"
+    },
+    "attributes" : [ "external" ],
+    "id" : "87",
+    "superClasses" : [ "88" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9GTPpvTCNZeTxKaPDMPZLL",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R9GTPpvTCNZeTxKaPDMPZLL",
+      "en" : "WMCH Map Service"
+    },
+    "attributes" : [ "external" ],
+    "id" : "60",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDekhU1ivjQHhtAJho6uXe2",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDekhU1ivjQHhtAJho6uXe2",
+      "undefined" : "Similar courses"
+    },
+    "attributes" : [ "external" ],
+    "id" : "63",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDQ0ncLxWDppouzc56CzM11",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDQ0ncLxWDppouzc56CzM11",
+      "en" : "..."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R7kJjqzl4Jv8QZ47IuxVvyZ",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R7kJjqzl4Jv8QZ47IuxVvyZ",
+      "en" : "Title"
+    },
+    "attributes" : [ "external" ],
+    "id" : "89",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RBZnZmxXqYyNJzvvsC905PP",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RBZnZmxXqYyNJzvvsC905PP",
+      "en" : "Moderator"
+    },
+    "attributes" : [ "external" ],
+    "id" : "48",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RCEShW4mewPQ276vn2CuwbG",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RCEShW4mewPQ276vn2CuwbG",
+      "undefined" : "Inappropriate content identifier"
+    },
+    "attributes" : [ "external" ],
+    "id" : "92",
+    "superClasses" : [ "42" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R971MV98pHcdyaaLobQAF40",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R971MV98pHcdyaaLobQAF40",
+      "undefined" : "Flexible"
+    },
+    "attributes" : [ "external" ],
+    "id" : "98",
+    "superClasses" : [ "99" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDpLx2THpRBIeMxsdHdjWZa",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDpLx2THpRBIeMxsdHdjWZa",
+      "en" : "Language"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/RuWzYBGN7bx9AM50Xop3QF",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RuWzYBGN7bx9AM50Xop3QF",
+        "en" : "French"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RDFh5C58toRSw20qUqc02VH",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RDFh5C58toRSw20qUqc02VH",
+        "en" : "Italian"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R91OdSaBUa3tNCGaJvyWTl",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R91OdSaBUa3tNCGaJvyWTl",
+        "en" : "German"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RsxIgqZE4Huv8hNJC5tiCp",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RsxIgqZE4Huv8hNJC5tiCp",
+        "en" : "English"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RPU53IsyIOxusLqisdXNtd",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RPU53IsyIOxusLqisdXNtd",
+      "en" : "Contests online"
+    },
+    "attributes" : [ "external" ],
+    "id" : "106",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDVdAInN486Q2fqf2zWlm5Q",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDVdAInN486Q2fqf2zWlm5Q",
+      "en" : "Topics"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/R8xDOL97FKMXweEcyAdcgBu",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R8xDOL97FKMXweEcyAdcgBu",
+        "en" : "IT"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R9U9FDomNh8ge22uizgS8V",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R9U9FDomNh8ge22uizgS8V",
+        "en" : "Biography"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RBQ8CnDyu5DjnoifAbYiXdb",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RBQ8CnDyu5DjnoifAbYiXdb",
+        "en" : "Robotics"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R7zdmNZ6GfoNcqaSJnfY7dw",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R7zdmNZ6GfoNcqaSJnfY7dw",
+        "en" : "Humanities"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R7f0Wv4UcH9kGEMD3C9paiz",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R7f0Wv4UcH9kGEMD3C9paiz",
+        "en" : "Social Science"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RvJgT0pmlVeE9jX5p12BL7",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RvJgT0pmlVeE9jX5p12BL7",
+        "en" : "Sciences"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R7bU2Y118Sb9nRXVYrruGzB",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R7bU2Y118Sb9nRXVYrruGzB",
+        "en" : "Sustainability"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RCWbw3ooPiXTJS5nIW9F8CO",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RCWbw3ooPiXTJS5nIW9F8CO",
+        "en" : "Mathematics"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/ROoee4ihhmRU2xpdcyDN4x",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "ROoee4ihhmRU2xpdcyDN4x",
+        "en" : "Geography/History"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9YkTSbzMthC7ffdGNJNtCR",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R9YkTSbzMthC7ffdGNJNtCR",
+      "en" : "Course"
+    },
+    "attributes" : [ "external" ],
+    "id" : "108",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RCd8hYIYRLYzpNXqH3unJDv",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RCd8hYIYRLYzpNXqH3unJDv",
+      "en" : "End User"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/RCgCwWKYtrct9Lv8M1sKUG",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RCgCwWKYtrct9Lv8M1sKUG",
+        "en" : "Teachers"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R8lkKQjiUbgIft280ztUAP7",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R8lkKQjiUbgIft280ztUAP7",
+        "en" : "Professors"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RDIwLFOnu4NxnwUHV1cIc8B",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RDIwLFOnu4NxnwUHV1cIc8B",
+        "en" : "High Schools"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/Rx9Fz9SmdqmBZe5ctJHe8l",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "Rx9Fz9SmdqmBZe5ctJHe8l",
+        "en" : "Adults"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RxnwXyolcVL2x5pUsAdsD5",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RxnwXyolcVL2x5pUsAdsD5",
+        "en" : "Tutors and Trainors"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R9fGliUusMfWrWwRe02v3cj",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R9fGliUusMfWrWwRe02v3cj",
+        "en" : "Schools"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R2OVZATPMSu8zRYjnbClUB",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R2OVZATPMSu8zRYjnbClUB",
+        "en" : "Professionals and Freelancers"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R8UcjDaB4aiNi7i89ZUoEX8",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R8UcjDaB4aiNi7i89ZUoEX8",
+        "en" : "Universities"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "74",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RBWuN8U390YUMhH3NFkw2tW",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RBWuN8U390YUMhH3NFkw2tW",
+      "en" : "Video"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R99MUDKs9UYPU6vE3BAMqO6",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R99MUDKs9UYPU6vE3BAMqO6",
+      "en" : "Level"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/R9KV013Aih5ZbW9HTti7LtY",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R9KV013Aih5ZbW9HTti7LtY",
+        "en" : "Intermediate"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RDbaQwTffeEFT6MXdnDbaLO",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RDbaQwTffeEFT6MXdnDbaLO",
+        "en" : "Advanced"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R8R253NHtInfmOsCwSDBLBh",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R8R253NHtInfmOsCwSDBLBh",
+        "en" : "Beginner"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R76JvI3kU9gkYOSr96jKnzp",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R76JvI3kU9gkYOSr96jKnzp",
+      "en" : "Wikiversity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "59",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9wgCf9Xy0Db9me6P7A1Dtq",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R9wgCf9Xy0Db9me6P7A1Dtq",
+      "undefined" : "Age"
+    },
+    "attributes" : [ "external" ],
+    "id" : "111",
+    "superClasses" : [ "88" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RJfuxauS0VIdyLff65Y8wH",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RJfuxauS0VIdyLff65Y8wH",
+      "en" : "Interactive"
+    },
+    "subClasses" : [ "115", "69" ],
+    "attributes" : [ "external" ],
+    "id" : "70",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R7YkcxPxSIjyhH2tyAXvdsT",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R7YkcxPxSIjyhH2tyAXvdsT",
+      "en" : "Text"
+    },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RqxOJtsFg15HemmzZwkjOP",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RqxOJtsFg15HemmzZwkjOP",
+      "en" : "Coding"
+    },
+    "attributes" : [ "external" ],
+    "id" : "122",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9bcmj9uc8bw0TiFogrREb",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R9bcmj9uc8bw0TiFogrREb",
+      "en" : "Content"
+    },
+    "subClasses" : [ "76", "40", "108", "34", "70" ],
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R7XknL2PbJdhS6Ttm6lAOt6",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R7XknL2PbJdhS6Ttm6lAOt6",
+      "en" : "Wiki Science Competition"
+    },
+    "attributes" : [ "external" ],
+    "id" : "56",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RCcek5jDj5fGOracxfxYI1I",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RCcek5jDj5fGOracxfxYI1I",
+      "undefined" : "Schedule"
+    },
+    "subClasses" : [ "126", "98" ],
+    "attributes" : [ "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9jOXFyTdnWoXBYQJRcB3VZ",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R9jOXFyTdnWoXBYQJRcB3VZ",
+      "en" : "Readability"
+    },
+    "attributes" : [ "external" ],
+    "id" : "51",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RBpF5Fmk747ZxYBJgs69rDh",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RBpF5Fmk747ZxYBJgs69rDh",
+      "en" : "Sensibilisation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "128",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDWTmGjCXF9BxAsBjrlFggn",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDWTmGjCXF9BxAsBjrlFggn",
+      "en" : "Type"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/RCgPA8DxrVArrBYrqpvOe56",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RCgPA8DxrVArrBYrqpvOe56",
+        "en" : "Other"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RCA9tKT3kBKYJ1eHd1GQuii",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RCA9tKT3kBKYJ1eHd1GQuii",
+        "en" : "Projects"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RWltsRm0cRJrGXNfVsYJ6f",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RWltsRm0cRJrGXNfVsYJ6f",
+        "en" : "Certifications"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RB0Ryz32AhIBysRV7qYzIRT",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RB0Ryz32AhIBysRV7qYzIRT",
+        "en" : "Courses"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RCbSM9kOFf3Q2hEYvkZDs3n",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RCbSM9kOFf3Q2hEYvkZDs3n",
+        "en" : "Evaluation"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RC2oHj0eIvvsZRbRiCYf6L5",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RC2oHj0eIvvsZRbRiCYf6L5",
+      "en" : "Classifier"
+    },
+    "subClasses" : [ "42" ],
+    "attributes" : [ "external" ],
+    "id" : "38",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDl6wSGg69Hyo3zrvPYG8X0",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDl6wSGg69Hyo3zrvPYG8X0",
+      "en" : "Cost"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/R8damd3MnA2fPD6s3H7RMRf",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R8damd3MnA2fPD6s3H7RMRf",
+        "en" : "Free"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RCcwZpBHpzgbzwlzLsd3aw9",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RCcwZpBHpzgbzwlzLsd3aw9",
+        "en" : "Not Free"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RCNNb9jGGYMb9wVpryAHbgv",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RCNNb9jGGYMb9wVpryAHbgv",
+      "en" : "Wiki2map"
+    },
+    "attributes" : [ "external" ],
+    "id" : "58",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9MxXUCU9vrDz71LWklDicJ",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R9MxXUCU9vrDz71LWklDicJ",
+      "en" : "bin"
+    },
+    "subClasses" : [ "131", "132", "133", "122", "106", "128", "78" ],
+    "attributes" : [ "external" ],
+    "id" : "79",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9IX2jIVcqpCRLkYeMpw7N6",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R9IX2jIVcqpCRLkYeMpw7N6",
+      "en" : "offline/online"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/RBdiDm6WKrBBks25LplmeYH",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RBdiDm6WKrBBks25LplmeYH",
+        "en" : "online"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RCfxLDAfelrpgcYDpd7gQYs",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RCfxLDAfelrpgcYDpd7gQYs",
+        "en" : "offline"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R99QcEjhy4CkyY3OvgNuT4W",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R99QcEjhy4CkyY3OvgNuT4W",
+      "en" : "Requires participation"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/RCA9tKT3kBKYJ1eHd1GQuii",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RCA9tKT3kBKYJ1eHd1GQuii",
+        "en" : "Projects"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/R9iFRffG6XiJIDLbdvlGkGT",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "R9iFRffG6XiJIDLbdvlGkGT",
+        "en" : "Contests"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RB0Ryz32AhIBysRV7qYzIRT",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RB0Ryz32AhIBysRV7qYzIRT",
+        "en" : "Courses"
+      }
+    }, {
+      "iri" : "http://webprotege.stanford.edu/RCbSM9kOFf3Q2hEYvkZDs3n",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RCbSM9kOFf3Q2hEYvkZDs3n",
+        "en" : "Evaluation"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "135",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RCa9Z5ybPaqN4HbeJakYMmQ",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RCa9Z5ybPaqN4HbeJakYMmQ",
+      "en" : "Analyser"
+    },
+    "subClasses" : [ "32" ],
+    "attributes" : [ "external" ],
+    "id" : "37",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R7R1Q9sp8lgFiTazpRxYUYF",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R7R1Q9sp8lgFiTazpRxYUYF",
+      "undefined" : "Teacher info"
+    },
+    "attributes" : [ "external" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RBXCWhFG3Onq9ebDsfN004x",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RBXCWhFG3Onq9ebDsfN004x",
+      "undefined" : "Amount of students"
+    },
+    "subClasses" : [ "73" ],
+    "attributes" : [ "external" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9gcmdCL6MUP9Qp56srYREZ",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R9gcmdCL6MUP9Qp56srYREZ",
+      "en" : "User Input"
+    },
+    "subClasses" : [ "5", "89", "54" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RChMs6NBiQLloMBpJob3TJy",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RChMs6NBiQLloMBpJob3TJy",
+      "en" : "Other"
+    },
+    "attributes" : [ "external" ],
+    "id" : "133",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RSE1lf9facpxju1pUlymFa",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RSE1lf9facpxju1pUlymFa",
+      "en" : "Hackathon"
+    },
+    "attributes" : [ "external" ],
+    "id" : "57",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RCEJPt1stQ6jjjSyJY1JCsI",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RCEJPt1stQ6jjjSyJY1JCsI",
+      "undefined" : "Requirement"
+    },
+    "subClasses" : [ "87", "149", "111" ],
+    "attributes" : [ "external" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDtQNNEE2YhCxUJurJTDORl",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDtQNNEE2YhCxUJurJTDORl",
+      "undefined" : "Rating"
+    },
+    "attributes" : [ "external" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDgNl0jrjcIAa4PFbsJEL5",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDgNl0jrjcIAa4PFbsJEL5",
+      "en" : "School Projects"
+    },
+    "attributes" : [ "external" ],
+    "id" : "131",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RCltooOKVtXMC18eRj1z8cJ",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RCltooOKVtXMC18eRj1z8cJ",
+      "undefined" : "Inflexible"
+    },
+    "attributes" : [ "external" ],
+    "id" : "126",
+    "superClasses" : [ "99" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RCdTA5ArVq2SOIuQfORoeQM",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RCdTA5ArVq2SOIuQfORoeQM",
+      "en" : "Categories"
+    },
+    "subClasses" : [ "52", "79", "135" ],
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDD9JUKyCyoS8c75SdAfkn0",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDD9JUKyCyoS8c75SdAfkn0",
+      "en" : "Commons"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "0", "10" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R7iFOhNGU7a5AMzTiGYmSLV",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R7iFOhNGU7a5AMzTiGYmSLV",
+      "en" : "Data - metadata"
+    },
+    "attributes" : [ "external" ],
+    "id" : "132",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RCccacjUGla6EfVTKLNG2gp",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RCccacjUGla6EfVTKLNG2gp",
+      "en" : "Test"
+    },
+    "attributes" : [ "external" ],
+    "id" : "115",
+    "superClasses" : [ "70" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R0JqKEucN3TOse8v8q3Qir",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R0JqKEucN3TOse8v8q3Qir",
+      "en" : "Wikidata"
+    },
+    "attributes" : [ "external" ],
+    "id" : "62",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RCPrWOgCRQTq7sn7eXb5JOP",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RCPrWOgCRQTq7sn7eXb5JOP",
+      "en" : "Evaluation Dashboard"
+    },
+    "attributes" : [ "external" ],
+    "id" : "61",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDgU43F3iCTUd1iNaR0muwc",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDgU43F3iCTUd1iNaR0muwc",
+      "en" : "User"
+    },
+    "subClasses" : [ "48", "83", "74" ],
+    "attributes" : [ "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDXiOZDhNPoa89CIgUaaWSk",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDXiOZDhNPoa89CIgUaaWSk",
+      "en" : "Licence"
+    },
+    "individuals" : [ {
+      "iri" : "http://webprotege.stanford.edu/RD3aJb5hd99QHKUfYlraPJA",
+      "baseIri" : "http://webprotege.stanford.edu",
+      "labels" : {
+        "IRI-based" : "RD3aJb5hd99QHKUfYlraPJA",
+        "en" : "Open Educational Resource (OER)"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "167"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDpa6yu5Z5Rq9b6PLIckB8R",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDpa6yu5Z5Rq9b6PLIckB8R",
+      "en" : "Project"
+    },
+    "subClasses" : [ "0", "10" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R8EKA4fWmJcJVEktBYSqiH",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R8EKA4fWmJcJVEktBYSqiH",
+      "undefined" : "Technologies knowledge"
+    },
+    "attributes" : [ "external" ],
+    "id" : "149",
+    "superClasses" : [ "88" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/Ri6VYiFgqo5avHO8hDnUqW",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ri6VYiFgqo5avHO8hDnUqW",
+      "en" : "Normal User"
+    },
+    "attributes" : [ "external" ],
+    "id" : "83",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RCvUZQJFOAOyFe3HYhvkE9f",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RCvUZQJFOAOyFe3HYhvkE9f",
+      "undefined" : "Students counter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "73",
+    "superClasses" : [ "121" ]
+  }, {
+    "iri" : "http://webprotege.stanford.edu/REKnbVhitmdutzdw1lsVRe",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "REKnbVhitmdutzdw1lsVRe",
+      "en" : "Image Classifier"
+    },
+    "subClasses" : [ "92" ],
+    "attributes" : [ "external" ],
+    "id" : "42",
+    "superClasses" : [ "38" ]
+  } ],
+  "property" : [ {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "31",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "33",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "39",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "41",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "43",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "64",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "66",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "67",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "71",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "72",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "75",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "77",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "80",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "81",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "82",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "156",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "157",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "158",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "159",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "160",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "161",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "162",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "163",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "164",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "15",
+    "subproperty" : [ "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R7ArChoGI2Wit3DUU9LK5L",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "R7ArChoGI2Wit3DUU9LK5L",
+      "en" : "determines"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "5",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R7RsSJjFXQ1Uz9xN8ZlvdSA",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "R7RsSJjFXQ1Uz9xN8ZlvdSA",
+      "en" : "accepts"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "32",
+    "comment" : {
+      "undefined" : "takes as input"
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RBjh7JwtckwWbwqdWGW5DzQ",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "RBjh7JwtckwWbwqdWGW5DzQ",
+      "en" : "contains"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "10",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RBjh7JwtckwWbwqdWGW5DzQ",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "RBjh7JwtckwWbwqdWGW5DzQ",
+      "en" : "contains"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "10",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9IgrNnb9qNNGjYuI7tNirK",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "R9IgrNnb9qNNGjYuI7tNirK",
+      "en" : "classifies"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "42",
+    "comment" : {
+      "undefined" : "determines the type of something from a list"
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RBzkH4kgzODdTvrGzkKs6WM",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "RBzkH4kgzODdTvrGzkKs6WM",
+      "en" : "isoffline/online"
+    },
+    "domain" : "44",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "43"
+  }, {
+    "range" : "10",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R7YwUIqpIgviG9MuXuIpe6c",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "R7YwUIqpIgviG9MuXuIpe6c",
+      "en" : "assists"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "42",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R7ArChoGI2Wit3DUU9LK5L",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "R7ArChoGI2Wit3DUU9LK5L",
+      "en" : "determines"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "51",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R72K8V3niz1xMqc5K8WZXyj",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R72K8V3niz1xMqc5K8WZXyj",
+      "en" : "relatesTo"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "1",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RBjh7JwtckwWbwqdWGW5DzQ",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "RBjh7JwtckwWbwqdWGW5DzQ",
+      "en" : "contains"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "8",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R8sPB0XR3t1RVmXcw4MftZW",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "R8sPB0XR3t1RVmXcw4MftZW",
+      "en" : "creates"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "70",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RBjh7JwtckwWbwqdWGW5DzQ",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "RBjh7JwtckwWbwqdWGW5DzQ",
+      "en" : "contains"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "73",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R8oPWqbV5FFiWukysbllILD",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "R8oPWqbV5FFiWukysbllILD",
+      "en" : "supplements"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "76",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R8oPWqbV5FFiWukysbllILD",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "R8oPWqbV5FFiWukysbllILD",
+      "en" : "supplements"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "76",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDiNlfpY6yWft2MWDGe8Llf",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "RDiNlfpY6yWft2MWDGe8Llf",
+      "en" : "processes"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "49",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDjHUkqR3aph2N01HKpappr",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "RDjHUkqR3aph2N01HKpappr",
+      "en" : "consumes"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "74",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R8sPB0XR3t1RVmXcw4MftZW",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "R8sPB0XR3t1RVmXcw4MftZW",
+      "en" : "creates"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "83",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "82"
+  }, {
+    "range" : "10",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "10",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "10",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RDjHUkqR3aph2N01HKpappr",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "RDjHUkqR3aph2N01HKpappr",
+      "en" : "consumes"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "74",
+    "attributes" : [ "object", "external" ],
+    "id" : "24"
+  }, {
+    "range" : "10",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "range" : "10",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R8sPB0XR3t1RVmXcw4MftZW",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "R8sPB0XR3t1RVmXcw4MftZW",
+      "en" : "creates"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "83",
+    "attributes" : [ "object", "external" ],
+    "id" : "25"
+  }, {
+    "range" : "10",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "range" : "10",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9WG0eLKkxFeDWK2qCZ2Jfd",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "R9WG0eLKkxFeDWK2qCZ2Jfd",
+      "en" : "writtenIn"
+    },
+    "domain" : "15",
+    "attributes" : [ "object", "external" ],
+    "id" : "96"
+  }, {
+    "range" : "10",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "range" : "10",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "range" : "10",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "range" : "10",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "32",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "32",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "35",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "35",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "32",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "range" : "35",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "11",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "0",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "121",
+    "domain" : "73",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "37",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "6",
+    "domain" : "89",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "79",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "79",
+    "domain" : "128",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "79",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "79",
+    "domain" : "132",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "79",
+    "domain" : "131",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "range" : "79",
+    "domain" : "122",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "range" : "79",
+    "domain" : "133",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "range" : "99",
+    "domain" : "126",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "range" : "8",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "142"
+  }, {
+    "range" : "38",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "range" : "99",
+    "domain" : "98",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "8",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "8",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "range" : "8",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "range" : "70",
+    "domain" : "115",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "range" : "36",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "range" : "8",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
+  }, {
+    "range" : "70",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R7YwUIqpIgviG9MuXuIpe6c",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "R7YwUIqpIgviG9MuXuIpe6c",
+      "en" : "assists"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "92",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9IgrNnb9qNNGjYuI7tNirK",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "R9IgrNnb9qNNGjYuI7tNirK",
+      "en" : "classifies"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "92",
+    "comment" : {
+      "undefined" : "determines the type of something from a list"
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "156"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R72K8V3niz1xMqc5K8WZXyj",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "R72K8V3niz1xMqc5K8WZXyj",
+      "en" : "relatesTo"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "108",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RBjh7JwtckwWbwqdWGW5DzQ",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "RBjh7JwtckwWbwqdWGW5DzQ",
+      "en" : "contains"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "108",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R8oPWqbV5FFiWukysbllILD",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "R8oPWqbV5FFiWukysbllILD",
+      "en" : "supplements"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "40",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R8oPWqbV5FFiWukysbllILD",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "R8oPWqbV5FFiWukysbllILD",
+      "en" : "supplements"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "50",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/R9IgrNnb9qNNGjYuI7tNirK",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "R9IgrNnb9qNNGjYuI7tNirK",
+      "en" : "classifies"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "50",
+    "comment" : {
+      "undefined" : "determines the type of something from a list"
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RBObHK7GbqgWhtunjAMmYOm",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "RBObHK7GbqgWhtunjAMmYOm",
+      "en" : "suggests"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "107",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RwXbDYoTXHjfP5eMmtRb1T",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "RwXbDYoTXHjfP5eMmtRb1T",
+      "en" : "validates"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "48",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "163"
+  }, {
+    "iri" : "http://webprotege.stanford.edu/RwXbDYoTXHjfP5eMmtRb1T",
+    "baseIri" : "http://webprotege.stanford.edu",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "RwXbDYoTXHjfP5eMmtRb1T",
+      "en" : "validates"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "48",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "164"
+  }, {
+    "range" : "42",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "1",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "range" : "90",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "range" : "90",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "90",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "range" : "44",
+    "domain" : "135",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "range" : "44",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "44",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "88",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "range" : "6",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "range" : "88",
+    "domain" : "111",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "range" : "88",
+    "domain" : "149",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  } ]
+}
