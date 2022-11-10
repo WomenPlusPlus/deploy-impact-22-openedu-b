@@ -20,3 +20,7 @@ It can be run anywhere and should start the basic infrastructure of our project 
 localhost:8087
 
 API Endpoints: ...to be continued...
+
+# Usage
+
+To run tests simply run `docker-compose up -d` from the /tests folder
