@@ -37,6 +37,26 @@ services:
     environment:
       POSTGRES_PASSWORD: "vfifif"
       PGDATA: "/var/lib/postgresql/data/edudata"
+  graphdb:
+    container_name: graphdb
+    build:
+      context: .
+      dockerfile: Dockerfile_GraphDB
+    ports:
+      - 7200:7200
+  nutch:
+    container_name: nutch
+    build:
+      context: .
+      dockerfile: Dockerfile_Nutch
+      args:
+        BUILD_MODE: 2
+        SERVER_PORT: 8086
+        SERVER_HOST: 0.0.0.0
+        WEBAPP_PORT: 8088
+    ports:
+      - 8086:8086
+      - 8088:8088
 
 volumes:
   esdata:

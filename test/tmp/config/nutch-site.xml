@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+  <property>
+     <name>http.agent.name</name>
+     <value>Openedu</value>
+     <description>HTTP 'User-Agent' request header. MUST NOT be empty - 
+  please set this to a single word uniquely related to your organization.
+
+  NOTE: You should also check other related properties:
+
+    http.robots.agents
+    http.agent.description
+    http.agent.url
+    http.agent.email
+    http.agent.version
+
+  and set their values appropriately.
+    </description>
+  </property>
+    
+  <property>
+      <name>db.ignore.external.links</name>
+      <value>false</value>
+      <description>If true, outlinks leading from a page to external hosts or domain
+      will be ignored. This is an effective way to limit the crawl to include
+      only initially injected hosts or domains, without creating complex URLFilters.
+      See 'db.ignore.external.links.mode'.
+      </description>
+  </property>
+  <property>
+      <name>elastic.host</name>
+      <value>elastic</value>
+      <description>The hostname to send documents to using TransportClient.
+      Either host and port must be defined or cluster.
+      </description>
+  </property>
+  <property>
+      <name>elastic.port</name>
+      <value>9200</value>
+      <description>
+      The port to connect to using TransportClient.
+      </description>
+  </property>
+  <property>
+      <name>elastic.cluster</name>
+      <value>elasticsearch</value>
+      <description>The cluster name to discover. Either host and port must
+      be defined.
+      </description>
+  </property>
+  <property>
+      <name>elastic.index</name>
+      <value>nutch</value>
+      <description>
+      The name of the elasticsearch index. Will normally be autocreated if it
+      doesn't exist.
+      </description>
+  </property>
+</configuration>

@@ -1,0 +1,21 @@
+[PrefixDeclaration]
+:		urn:webprotege:ontology:9115a228-0dba-43a3-8e59-fcd393f7ec50#
+ex:		http://webprotege.stanford.edu/
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+obda:		https://w3id.org/obda/vocabulary#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+webprotege:	http://webprotege.stanford.edu/
+
+[MappingDeclaration] @collection [[
+mappingId	MAPID-41a177eb756b4f64b3d14c3e31be9e4d
+target		ex:project/{id} a ex:Project ; ex:title {title} . 
+source		SELECT id, title from public.project_new
+
+mappingId	MAPID-f6674a95abe241a48db975fb39440707
+target		ex:content/{description} a ex:R9bcmj9uc8bw0TiFogrREb . 
+source		select id, description from public.project_new
+]]
+

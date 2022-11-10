@@ -1,0 +1,16 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rep: <http://www.openrdf.org/config/repository#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix obda: <http://inf.unibz.it/krdb/obda/quest#>.
+
+[] a rep:Repository;
+   rep:repositoryID "openedu1";
+   rdfs:label "";
+   rep:repositoryImpl [
+        rep:repositoryType "graphdb:OntopRepository";
+        obda:obdaFile "onto-mapping.ttl";
+        obda:owlFile "onto.owl";
+        obda:propertiesFile "ontop_jdbc.properties";
+        obda:constraintFile "";
+        obda:dbMetadataFile ""
+   ].

@@ -1,0 +1,25 @@
+version: "3.3"
+services:
+  nutch:
+    container_name: nutch
+    build:
+      context: .
+      dockerfile: Dockerfile_Nutch
+      args:
+        BUILD_MODE: 2
+        SERVER_PORT: 8086
+        SERVER_HOST: 0.0.0.0
+        WEBAPP_PORT: 8088
+    ports:
+      - 8086:8086
+      - 8088:8088
+  elastic:
+    container_name: elastic
+    hostname: elastic
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.4.3
+    environment:
+      - xpack.security.enabled=false
+      - "discovery.type=single-node"
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    ports:
+      - 9201:9200

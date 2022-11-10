@@ -1,0 +1,4 @@
+FROM khaller/graphdb-free:10.0.0
+COPY postgresql-42.5.0.jar /opt/graphdb/lib
+RUN mkdir -p /opt/graphdb/data/repositories/openedu1
+COPY ./openedu1-config /opt/graphdb/data/repositories/openedu1
