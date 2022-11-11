@@ -25,4 +25,4 @@ API Endpoints: ...to be continued...
 
 To run tests simply run `docker-compose up -d` from the /tests folder
 
-For now to run the crawler, one needs to get into the container and trigger ´./run.sh´ inside of it, also ´seed.txt´ is adjustable. For the future all that can be automated with a cron-job, for example
+For now to run the crawler, one needs to get into the container and trigger `./run.sh` inside of it, also `seed.txt` is adjustable. For the future all that can be automated with a cron-job, for example
