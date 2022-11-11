@@ -5,12 +5,13 @@ import (
 	"context"
 	"encoding/json"
 	"io"
-	"strconv"
 	"strings"
+	"time"
 
 	"github.com/elastic/go-elasticsearch/v8"
-	"github.com/elastic/go-elasticsearch/v8/esapi"
+	//"github.com/elastic/go-elasticsearch/v8/esapi"
 	"go.uber.org/zap"
+	"strconv"
 )
 
 type ESDB struct {
@@ -18,13 +19,17 @@ type ESDB struct {
 	log  *zap.Logger
 }
 
-var index string = "openedupg"
+var index string = "nutch"
 
 func ConnectES(ctx context.Context, logger *zap.Logger) (*ESDB, error) {
 	db := ESDB{
 		log: logger,
 	}
-	es, err := elasticsearch.NewDefaultClient()
+	cfg := elasticsearch.Config{
+		Addresses: []string{
+			"http://localhost:9201",
+		}}
+	es, err := elasticsearch.NewClient(cfg)
 	if err != nil {
 		db.log.Error("failed connect to elastic", zap.Error(err))
 	}
@@ -54,102 +59,88 @@ func (db *ESDB) Ping() error {
 	return nil
 }
 
-func (db *ESDB) CreateMapping(ctx context.Context) error {
-	req := esapi.IndicesExistsRequest{
-		Index: []string{index},
-	}
-
-	res, err := req.Do(ctx, db.conn)
-	if err != nil {
-		db.log.Error("could not check indices", zap.Error(err))
-	}
-
-	if res.StatusCode == 404 {
-
-		mapping := `{"mappings":{  
-		"properties":{  
-		   "by":{  
-			  "type":"keyword"
-		   },
-		   "link":{  
-			"type":"keyword"
-		 },
-		   "title":{  
-			  "type":"text"
-		   },
-		   "description":{  
-			  "type":"text"
-		   }
-		}
-	 }
-  }`
-		indexReq := esapi.IndicesCreateRequest{
-			Index: index,
-			Body:  strings.NewReader(string(mapping)),
-		}
-
-		res, err = indexReq.Do(ctx, db.conn)
-		if err != nil {
-			db.log.Error("creating mapping failed", zap.Error(err))
-			return err
-		}
-		defer res.Body.Close()
-		b, err := io.ReadAll(res.Body)
-		if err != nil {
-			db.log.Error("could not read body", zap.Error(err))
-			return err
-		}
-		db.log.Info(string(b))
-	}
-
-	return nil
+type ProjectData struct {
+	licence      string
+	title        string
+	url          string
+	boost        float64
+	lastModified time.Time
+	lang         string
 }
 
-func (db *ESDB) PutDocs(ctx context.Context, data []ProjectData) error {
+func (db *ESDB) ReadDocs(ctx context.Context) ([][]interface{}, error) {
+	var mapResp map[string]interface{}
+	var buf bytes.Buffer
+	data := [][]interface{}{}
 
-	for i, d := range data {
-		b, err := db.prepDocs(d)
-		if err != nil {
-			return err
-		}
-		if err := db.addDocs(ctx, b, i); err != nil {
-			return err
-		}
+	query := `{"query": {"match_all" : {}}, "size": 100}`
 
-	}
-	db.log.Info("all docs are inserted")
-	return nil
-}
-
-func (db *ESDB) prepDocs(data ProjectData) (io.Reader, error) {
-	b, err := json.Marshal(data)
-	if err != nil {
-		db.log.Error("failed marshal data", zap.Error(err))
+	var b strings.Builder
+	b.WriteString(query)
+	read := strings.NewReader(b.String())
+	if err := json.NewEncoder(&buf).Encode(read); err != nil {
+		db.log.Error("Error encoding query", zap.Error(err))
 		return nil, err
 	}
-	iob := bytes.NewReader(b)
-	return iob, nil
 
-}
-
-func (db *ESDB) addDocs(ctx context.Context, data io.Reader, i int) error {
-	req := esapi.IndexRequest{
-		Index:      index,
-		DocumentID: strconv.Itoa(i + 1),
-		Body:       data,
-		Refresh:    "true",
-	}
-
-	res, err := req.Do(ctx, db.conn)
+	res, err := db.conn.Search(
+		db.conn.Search.WithContext(ctx),
+		db.conn.Search.WithIndex(index),
+		db.conn.Search.WithBody(read),
+		db.conn.Search.WithTrackTotalHits(true),
+		db.conn.Search.WithPretty(),
+	)
 	if err != nil {
-		db.log.Error("failed to insert doc", zap.Error(err))
+		db.log.Error("Error calling es", zap.Error(err))
+		return nil, err
 	}
+
 	defer res.Body.Close()
-	b, err := io.ReadAll(res.Body)
-	if err != nil {
-		db.log.Error("could not read body", zap.Error(err))
-		return err
+
+	// Decode the JSON response and using a pointer
+	if err := json.NewDecoder(res.Body).Decode(&mapResp); err != nil {
+		db.log.Error("Error parsing the response body", zap.Error(err))
+		return nil, err
 	}
-	db.log.Info(string(b))
-	return nil
+
+	for _, hit := range mapResp["hits"].(map[string]interface{})["hits"].([]interface{}) {
+
+		// Parse the attributes/fields of the document
+		doc := hit.(map[string]interface{})
+		ds := doc["_source"].(map[string]interface{})
+
+		lic := ""
+		if ds["cc"] != nil {
+			for _, l := range ds["cc"].([]interface{}) {
+				for _, ll := range l.([]interface{}) {
+					lic += " ," + ll.(string)
+				}
+			}
+		}
+		var t time.Time
+		if ds["lastModified"] != nil {
+			t, err = time.Parse("2006-01-02T15:04:05Z", ds["lastModified"].(string))
+			if err != nil {
+				db.log.Error("failed to parse time", zap.Error(err))
+				return nil, err
+			}
+		}
+		s, err := strconv.ParseFloat(ds["boost"].(string), 32)
+		if err != nil {
+			db.log.Error("failed to parse boost", zap.Error(err))
+			return nil, err
+		}
+		data = append(data, []interface{}{
+			ds["url"].(string),
+			ds["title"].(string),
+			lic,
+			ds["content"].(string),
+			"apache_nutch",
+			ds["lang"].(string),
+			t,
+			s,
+		})
+
+	}
+	return data, nil
 }

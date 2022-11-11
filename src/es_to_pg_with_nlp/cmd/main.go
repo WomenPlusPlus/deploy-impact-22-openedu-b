@@ -19,7 +19,7 @@ func main() {
 
 	// connect to postgres
 	log.Info("connecting pg")
-	pg, err := service.ConnectPG(ctx, fmt.Sprintf(`postgres://deploy_impact:%s@deploy-impact-cg-chrisg-demo.aivencloud.com:24947/openedu?pool_max_conns=10`, ev.Pgpass), log)
+	pg, err := service.ConnectPG(ctx, fmt.Sprintf(`postgres://postgres:%s@20.13.34.93:2345/openedub?pool_max_conns=10`, ev.Pgpass), log)
 
 	if err != nil {
 		log.Fatal("connection to pg failed")
@@ -35,21 +35,15 @@ func main() {
 		log.Fatal("could not ping es")
 	}
 
-	// get the data from pg
-	log.Info("getting data from pg")
-	data, err := pg.ReadProject(ctx)
-	if err != nil {
-		log.Fatal("reading data failed")
-	}
-
 	// insert the data to elastic
-	log.Info("inserting data to es")
-	if err := es.CreateMapping(ctx); err != nil {
+	log.Info("getting data from es")
+	data, err := es.ReadDocs(ctx)
+	if err != nil {
 		log.Fatal("failed to create mapping")
 	}
 
-	if err := es.PutDocs(ctx, data); err != nil {
-		log.Fatal("failed to put documents")
+	if err := pg.WriteToPG(ctx, "project_crawled", data); err != nil {
+		log.Fatal("failed to save the data")
 	}
 
 	log.Info("all done")

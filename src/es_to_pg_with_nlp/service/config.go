@@ -20,7 +20,7 @@ func InitLogger() *zap.Logger {
 	zapConfig.EncoderConfig.EncodeTime = zapcore.RFC3339TimeEncoder
 
 	logger, err := zapConfig.Build(zap.Fields(
-		zap.String("projectID", "pg_to_es"),
+		zap.String("projectID", "es_to_pg"),
 	))
 
 	if err != nil {

@@ -2,7 +2,7 @@ package service
 
 import (
 	"context"
-	"github.com/jackc/pgtype"
+	"github.com/jackc/pgx/v4"
 	"github.com/jackc/pgx/v4/pgxpool"
 	"go.uber.org/zap"
 )
@@ -26,33 +26,40 @@ func ConnectPG(ctx context.Context, pgpath string, logger *zap.Logger) (*PGDB, e
 	}
 	db.conn = conn
 
+	_, err = db.conn.Exec(ctx, `
+	CREATE TABLE IF NOT EXISTS public.project_crawled 
+	(id serial PRIMARY KEY, 
+		link varchar(500) NOT NULL,
+		title varchar(200) NOT NULL, 
+		license varchar(200), 
+		description varchar(20000) NOT NULL, 
+		author varchar(500),
+		type varchar(100),
+		topic varchar(300),
+		skills varchar(300),
+		lang varchar(10),
+		lastmodified timestamp,
+		rating float(8));
+		DELETE FROM public.project_crawled WHERe True`)
+	if err != nil {
+		db.log.Error("project_crawled creation failed: ", zap.Error(err))
+		return nil, err
+	}
+
 	return &db, nil
 }
 
-type ProjectData struct {
-	By          pgtype.Varchar `json:"by"`
-	Title       pgtype.Varchar `json:"title"`
-	Link        pgtype.Varchar `json:"link"`
-	Description pgtype.Varchar `json:"description"`
-}
-
-func (db *PGDB) ReadProject(ctx context.Context) ([]ProjectData, error) {
-	var pd []ProjectData
-	row, err := db.conn.Query(ctx, `select by, title_en ,link, short_description_en from sito_project sp `)
+func (db *PGDB) WriteToPG(ctx context.Context, table string, data [][]interface{}) error {
+	copyCount, err := db.conn.CopyFrom(ctx,
+		pgx.Identifier{"public", table},
+		[]string{"link", "title", "license", "description", "author", "lang", "lastmodified", "rating"},
+		pgx.CopyFromRows(data),
+	)
 	if err != nil {
-		db.log.Error("Select project data failed:", zap.Error(err))
-		return nil, err
+		db.log.Error("copy from failed", zap.String("table", table), zap.Error(err))
+		return err
 	}
-	defer row.Close()
 
-	for row.Next() {
-		var r ProjectData
-		err = row.Scan(&r.By, &r.Title, &r.Link, &r.Description)
-		if err != nil {
-			db.log.Error("Select row failed:", zap.Error(err))
-			return nil, err
-		}
-		pd = append(pd, r)
-	}
-	return pd, nil
+	db.log.Info("inserted rows", zap.Int("count", int(copyCount)))
+	return nil
 }
