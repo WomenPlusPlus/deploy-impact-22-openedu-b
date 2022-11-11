@@ -21,7 +21,11 @@
   and set their values appropriately.
     </description>
   </property>
-    
+
+  <property>
+     <name>plugin.includes</name>
+     <value>index-(anchor|basic|more|static|replace)|tld|subcollection|creativecommons|language-identifier|urlmeta|protocol-http|urlfilter-regex|parse-(html|tika)|index-(basic|anchor)|urlnormalizer-(pass|regex|basic)|scoring-opic|indexer-elastic</value>
+  </property>
   <property>
       <name>db.ignore.external.links</name>
       <value>false</value>
@@ -33,7 +37,7 @@
   </property>
   <property>
       <name>elastic.host</name>
-      <value>elastic</value>
+      <value>elastic,</value>
       <description>The hostname to send documents to using TransportClient.
       Either host and port must be defined or cluster.
       </description>
@@ -43,13 +47,6 @@
       <value>9200</value>
       <description>
       The port to connect to using TransportClient.
-      </description>
-  </property>
-  <property>
-      <name>elastic.cluster</name>
-      <value>elasticsearch</value>
-      <description>The cluster name to discover. Either host and port must
-      be defined.
       </description>
   </property>
   <property>

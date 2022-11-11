@@ -109,6 +109,15 @@ COPY ./config/supervisord_startserver_webapp.conf /etc/supervisord.conf
 EXPOSE $SERVER_PORT
 EXPOSE $WEBAPP_PORT
 
+COPY ./config/index-writers.xml /root/nutch_source/runtime/local/conf
+COPY ./config/nutch-site.xml /root/nutch_source/runtime/local/conf
+RUN mkdir /root/nutch_source/runtime/local/conf/urls
+COPY ./config/seed.txt /root/nutch_source/runtime/local/conf/urls
+COPY ./config/regex-urlfilter.txt /root/nutch_source/runtime/local/conf
+COPY ./config/run.sh /root/nutch_source/run.sh
+RUN chmod +x /root/nutch_source/run.sh
+
+
 ENTRYPOINT [ "supervisord", "--nodaemon", "--configuration", "/etc/supervisord.conf" ]
 
 FROM branch-version-$BUILD_MODE AS final

@@ -11,6 +11,6 @@ echo $s2
 nutch fetch $s2
 nutch parse $s2
 nutch updatedb /root/nutch_source/crawl/crawldb $s2
-nutch invertlinks crawl/linkdb -dir /root/nutch_source/crawl/segments
-nutch index crawl/crawldb/ -linkdb /root/nutch_source/crawl/linkdb/ $s1 -filter -normalize -deleteGone
-nutch index crawl/crawldb/ -linkdb /root/nutch_source/crawl/linkdb/ $s2 -filter -normalize -deleteGone
+nutch invertlinks /root/nutch_source/crawl/linkdb -dir /root/nutch_source/crawl/segments
+nutch index /root/nutch_source/crawl/crawldb/ -linkdb /root/nutch_source/crawl/linkdb/ $s1 -filter -normalize -deleteGone
+nutch index /root/nutch_source/crawl/crawldb/ -linkdb /root/nutch_source/crawl/linkdb/ $s2 -filter -normalize -deleteGone
