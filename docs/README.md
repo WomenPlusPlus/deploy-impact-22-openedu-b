@@ -9,6 +9,8 @@ Architecture overview:
 
 ![architecture](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/blob/main/docs/arc.png?raw=true)
 
+More detailed architecture sketches can be found [here](https://docs.google.com/presentation/d/1CGnFI20MGYqmDS8LOK22kPZibg2cCyxN/edit?usp=sharing&ouid=116107646250723740329&rtpof=true&sd=true)
+
 
 - [/src](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/src): has all code. 
 It has individual folders corresponding to separate microservices. 
