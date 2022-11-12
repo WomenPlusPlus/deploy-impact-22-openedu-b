@@ -5,7 +5,7 @@ from fastapi.responses import RedirectResponse
 from fastapi.responses import ORJSONResponse
 from typing import Union
 from pathlib import Path
-from service.config import ES_HOST, PG_HOST, PG_PORT
+from service.config import ES_HOST, PG_HOST, PG_PORT,APP_HOST
 
 from service import storage
 from fastapi.templating import Jinja2Templates
@@ -65,7 +65,7 @@ def root(request: Request, pg: storage.PG = Depends(storage.get_pg)) -> dict:  #
     data = pg.select()
     return TEMPLATES.TemplateResponse(
         "moderator.html",
-        {"request": request, "projects": data},
+        {"request": request, "projects": data, "app_host": APP_HOST},
     )
 
 @api_router.get("/", status_code=200)
@@ -76,7 +76,7 @@ def root(request: Request) -> dict:  # 2
 
     return TEMPLATES.TemplateResponse(
         "index.html",
-        {"request": request},
+        {"request": request, "app_host": APP_HOST},
     )
 
 @api_router.get("/search", status_code=200)
@@ -87,7 +87,7 @@ def root(request: Request, q: Union[str, None] = None, es: storage.ES = Depends(
     data = es.search_in_es(q)
     return TEMPLATES.TemplateResponse(
         "search.html",
-        {"request": request, "projects": data},
+        {"request": request, "projects": data, "app_host": APP_HOST},
     )
 
 

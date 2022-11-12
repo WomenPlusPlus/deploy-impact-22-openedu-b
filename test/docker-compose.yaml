@@ -38,6 +38,7 @@ services:
       - ES_HOST=essearch
       - PG_HOST=postgres
       - PG_PORT=5432
+      - APP_HOST=4.231.57.204
     ports:
       - 8089:8089
 
