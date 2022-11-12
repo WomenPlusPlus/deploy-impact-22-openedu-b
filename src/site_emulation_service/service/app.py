@@ -5,8 +5,9 @@ from fastapi.responses import RedirectResponse
 from fastapi.responses import ORJSONResponse
 from typing import Union
 from pathlib import Path
+from service.config import ES_HOST, PG_HOST, PG_PORT
 
-import storage
+from service import storage
 from fastapi.templating import Jinja2Templates
 
 
@@ -26,8 +27,10 @@ async def startup():
     On API startup create DB connection, and other objects
     :return:
     """
-    storage.pg = storage.PG(host='localhost', port=2345, user='postgres', db='openedub', password='vfifif')
+    storage.pg = storage.PG(host=PG_HOST, port=PG_PORT, user='postgres', db='openedub', password='vfifif')
     storage.pg.connect()
+    storage.es = storage.ES(host=ES_HOST)
+
     app.state.executor = ProcessPoolExecutor()
 
 
@@ -77,11 +80,11 @@ def root(request: Request) -> dict:  # 2
     )
 
 @api_router.get("/search", status_code=200)
-def root(request: Request, q: Union[str, None] = None) -> dict:  # 2
+def root(request: Request, q: Union[str, None] = None, es: storage.ES = Depends(storage.get_es)) -> dict:  # 2
     """
     Root GET
     """
-    data = storage.search_in_es(q)
+    data = es.search_in_es(q)
     return TEMPLATES.TemplateResponse(
         "search.html",
         {"request": request, "projects": data},

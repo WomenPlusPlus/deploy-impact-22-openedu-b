@@ -43,15 +43,24 @@ def get_pg() -> PG:
     return pg
 
 
+class ES:
+    def __init__(self, host):
+        self.host = host
 
-def search_in_es(search: str):
-    res = requests.get(f'http://0.0.0.0:8087/search?q={search}')
-    res = res.json()
-    rr = []
-    for r in res['hits']['hits']:
-        a = r['_source']
-        a['type'] = 'openedu'
-        a['tags'] = ['wiki', 'community']
-        rr.append(r['_source'])
+    def search_in_es(self, search: str):
+        res = requests.get(f'http://{self.host}:8087/search?q={search}')
+        res = res.json()
+        rr = []
+        for r in res['hits']['hits']:
+            a = r['_source']
+            a['type'] = 'openedu'
+            a['tags'] = ['wiki', 'community']
+            rr.append(r['_source'])
 
-    return rr
+        return rr
+
+
+es: ES = None
+
+def get_es() -> ES:
+    return es

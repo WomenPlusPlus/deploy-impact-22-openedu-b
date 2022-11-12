@@ -15,6 +15,7 @@ services:
 
   essearchservice:
     container_name: essearch
+    hostname: essearch
     build:
       context: ../src/es_search_service
       dockerfile: Dockerfile
@@ -24,6 +25,21 @@ services:
       - ES_HOST=http://es-container:9200
     ports:
       - 8087:8087
+
+  siteservice:
+    container_name: siteservice
+    build:
+      context: ../src/site_emulation_service
+      dockerfile: Dockerfile
+    depends_on:
+      - elasticsearch
+      - postgres
+    environment:
+      - ES_HOST=essearch
+      - PG_HOST=postgres
+      - PG_PORT=5432
+    ports:
+      - 8089:8089
 
   postgres:
     container_name: postgres
@@ -37,6 +53,7 @@ services:
     environment:
       POSTGRES_PASSWORD: "vfifif"
       PGDATA: "/var/lib/postgresql/data/edudata"
+
   graphdb:
     container_name: graphdb
     build:
@@ -44,6 +61,7 @@ services:
       dockerfile: Dockerfile_GraphDB
     ports:
       - 7200:7200
+
   nutch:
     container_name: nutch
     build:
