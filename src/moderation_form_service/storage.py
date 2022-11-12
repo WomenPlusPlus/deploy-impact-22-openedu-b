@@ -1,5 +1,6 @@
 import psycopg2
 import psycopg2.extras
+import requests
 
 class PG():
     def __init__(self, host, port, password, user,db):
@@ -40,3 +41,17 @@ pg: PG = None
 
 def get_pg() -> PG:
     return pg
+
+
+
+def search_in_es(search: str):
+    res = requests.get(f'http://0.0.0.0:8087/search?q={search}')
+    res = res.json()
+    rr = []
+    for r in res['hits']['hits']:
+        a = r['_source']
+        a['type'] = 'openedu'
+        a['tags'] = ['wiki', 'community']
+        rr.append(r['_source'])
+
+    return rr

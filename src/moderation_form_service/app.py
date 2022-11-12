@@ -1,10 +1,11 @@
 from concurrent.futures.process import ProcessPoolExecutor
 
-from fastapi import FastAPI, APIRouter, Query, HTTPException, Request, Depends
+from fastapi import FastAPI, APIRouter, Request, Depends, Form
+from fastapi.responses import RedirectResponse
 from fastapi.responses import ORJSONResponse
+from typing import Union
 from pathlib import Path
 
-from fastapi.staticfiles import StaticFiles
 import storage
 from fastapi.templating import Jinja2Templates
 
@@ -65,14 +66,32 @@ def root(request: Request, pg: storage.PG = Depends(storage.get_pg)) -> dict:  #
     )
 
 @api_router.get("/", status_code=200)
-def root(request: Request, pg: storage.PG = Depends(storage.get_pg)) -> dict:  # 2
+def root(request: Request) -> dict:  # 2
     """
     Root GET
     """
-    data = pg.select()
+
     return TEMPLATES.TemplateResponse(
         "index.html",
+        {"request": request},
+    )
+
+@api_router.get("/search", status_code=200)
+def root(request: Request, q: Union[str, None] = None) -> dict:  # 2
+    """
+    Root GET
+    """
+    data = storage.search_in_es(q)
+    return TEMPLATES.TemplateResponse(
+        "search.html",
         {"request": request, "projects": data},
     )
+
+
+@app.post("/search")
+def edit_bom(search: str = Form(...)):
+    print(search)
+
+    return RedirectResponse(url=f"/search?q={search}", status_code=303)
 
 app.include_router(api_router)
