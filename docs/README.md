@@ -1,8 +1,8 @@
 # OpenEDU
 
-The project is built as in a form of several microservices running together within a docker-compose environment 
+The project is built in a form of several microservices running together within a docker-compose environment 
 (should be replced with Kubernetes for production).
-Docker-compose also contains several standart packages such as postgres and elasticsearch, we highly recommend swith to
+Docker-compose also contains several standart packages such as postgres and elasticsearch, we highly recommend switch to
 fully-managed versions of them in case the whole infrastructure will be located in the commertial cloud (e.g. Azure)
 
 Architecture overview:
@@ -15,16 +15,29 @@ More detailed architecture sketches can be found [here](https://docs.google.com/
 - [/src](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/src): has all code. 
 It has individual folders corresponding to separate microservices. 
 Some microservices are just made for one time run, but can be extendet to be triggered, 
-for example by Queing Services (RabbitMQ, Pub/Sub etc.)
+for example by Queing Services (RabbitMQ, Pub/Sub etc.) or by cron-jobs:
+	- [pg_to_es](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/src/pg_to_es) - a service
+	which moves data from postgres db to elasticsearch. Also creates documents.
+	- [es_search_service](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/src/es_search_service) - an
+	API service which allows easy search in elastic index.
+	- [gs_to_pg](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/src/gs_to_pg) - service to get data
+	from google sheets to postgres. Was used to collect manually collected data.
+	- [internet_to_pg](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/src/internet_to_pg) - scraper,
+	collected data from some predefined websites (wiki techblog and wikisearch).
+	- [es_to_pg_with_nlp](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/src/es_to_pg_with_nlp) - crawler
+	collected data to the elastic, we wanted to have it sync with postgres.
+	- [owl_reader](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/src/owl_reader) - some tests with working with
+	ontology files. Was supposed to become also an API service enabling communication with the ontology of OntoDB
+	- [moderation_form_service](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/src/moderation_form_service) - 
+	small service that emulates user working with the openedu website. It has a landing page, moderator form with the projects suggested
+	based on our scrape/crwal/manual data search attempts + aut-generated content. Search page shows search results from elastic.
+
 
 - [/test](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/test): docker-compose file.
-It can be run anywhere and should start the basic infrastructure of our project with the main API running on:
-localhost:8087
-
-API Endpoints: ...to be continued...
+It can be run anywhere and should start the basic infrastructure of our project.
 
 # Usage
 
 To run tests simply run `docker-compose up -d` from the /tests folder
 
-For now to run the crawler, one needs to get into the container and trigger `./run.sh` inside of it, also `seed.txt` is adjustable. For the future all that can be automated with a cron-job, for example
+For now to run the crawler, one needs to get into the container and trigger `./nutch_sourse/run.sh` inside of it, also `seed.txt` is adjustable. For the future all that can be automated with a cron-job, for example.
