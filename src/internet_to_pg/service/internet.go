@@ -118,7 +118,7 @@ func (db *InternetDB) ReadFromWikiSearch(page string, d chan [][]interface{}, er
 
 	})
 	if err := db.conn.Visit(page); err != nil {
-		db.log.Error("failed to visit techblog", zap.Error(err))
+		db.log.Error("failed to visit wikisearch", zap.Error(err))
 		errChan <- err
 	}
 

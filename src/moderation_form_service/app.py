@@ -53,6 +53,17 @@ PROJECTS = [{
 
 api_router = APIRouter()
 
+@api_router.get("/moderator", status_code=200)
+def root(request: Request, pg: storage.PG = Depends(storage.get_pg)) -> dict:  # 2
+    """
+    Root GET
+    """
+    data = pg.select()
+    return TEMPLATES.TemplateResponse(
+        "moderator.html",
+        {"request": request, "projects": data},
+    )
+
 @api_router.get("/", status_code=200)
 def root(request: Request, pg: storage.PG = Depends(storage.get_pg)) -> dict:  # 2
     """

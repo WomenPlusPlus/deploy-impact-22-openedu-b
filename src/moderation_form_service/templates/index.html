@@ -4,61 +4,32 @@
       <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   </head>
   <body>
-    <section class="bg-black ">
-        <div class="container px-5 py-12 mx-auto lg:px-20">
-            <div class="flex flex-col flex-wrap pb-6 mb-12 text-white ">
-                <h1 class="mb-12 text-3xl font-medium text-white">
-                    Moderation
-                </h1>
-                    <p class="text-base leading-relaxed">
-                        in progress...</p>
+  <section class="bg-white ">
+      <div class="flex p-3 container px-5 py-2 mx-auto lg:px-20">
+            <div class="container border-gray-600 w-1/5 border-2 border-gray-600">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Wikipedia-logo-v2-en.svg" alt="wiki">
             </div>
-            {% for project in projects %}
-                <div
-                    class="flex flex-wrap items-end justify-start w-full transition duration-500 ease-in-out transform bg-black border-2 border-gray-600 rounded-lg hover:border-white ">
-                    <div class="bg-blue-300 border-gray-900 rounded-lg space-x-2 space-y-4 absolute top-0 right-0 p-3">{{project.type}}</div>
-                    <div class="text-white space-x-2 space-y-4 absolute bottom-0 right-0">By: {{project.author}}</div>
-                                  <button class="rounded-lg bg-green-800 absolute h-14 w-14 top-2 -right-20 transition box-content h-6 w-6 space-x-4 space-y-2 transform border border-gray-900 hover:bg-gray-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 focus:border-gray-500 focus:bg-gray-400 ">accept</button>
-                                  <button class="rounded-lg bg-blue-800 absolute h-14 w-14 top-20 -right-20 transition box-content h-6 w-6 space-x-4 space-y-2 transform border border-gray-900 hover:bg-gray-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 focus:border-gray-500 focus:bg-gray-400 ">modify</button>
-                                  <button class="rounded-lg bg-red-800 absolute h-14 w-14 top-30 -right-20 transition box-content h-6 w-6 space-x-4 space-y-2 transform border border-gray-900 hover:bg-gray-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 focus:border-gray-500 focus:bg-gray-400 ">reject</button>
+          <div class="container border-gray-600 border-2 border-gray-600">
+              <a href="http://localhost:8089/">
+              <img src="https://www.openedu.ch/static/sito/img/loghi/wikimedia_ch_logo.svg" alt="openedu">
+                  </a>
+            </div>
+      </div>
+            <div class="flex p-3 container px-5 py-2 mx-auto lg:px-20">
+            <div class="container border-gray-600 border-2 border-gray-600">
+                              <button class="hover:bg-gray-500 focus:shadow-outline w-full focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 focus:border-gray-500 focus:bg-gray-400 ">
+                                  <a href="http://localhost:8089/search">Search</a>
+                              </button>
 
-
-
-                    <div class="w-full xl:w-2/3 md:w-2/3">
-                        <div class="relative flex flex-col h-full p-8 ">
-                            <h2 class="mb-4 font-semibold tracking-widest text-white uppercase title-font">
-                                {{project.title}}
-                            </h2>
-                            <p class="flex items-center mb-2 text-lg font-normal tracking-wide text-white border-2">
-                                <span
-                                    class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-white rounded-full bg-blue-1300">
-
-                                </span>{{project.description}}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="w-full xl:w-1/4 md:w-1/4 lg:ml-auto">
-                        <div class="relative flex flex-col h-full p-8">
-                            <button
-                                    class="w-full bg-blue-800 px-4 py-2 mx-auto mt-3 text-white transition duration-500 ease-in-out transform border border-gray-900 rounded-lg text-md hover:bg-gray-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 focus:border-gray-500 focus:bg-gray-400 "><a href="{{project.link}}">Visit Site</a>
+            </div>
+          <div class="container border-gray-600 border-2 border-gray-600">
+                            <button class="hover:bg-gray-500 focus:shadow-outline w-full focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 focus:border-gray-500 focus:bg-gray-400 ">
+                                 <a href="http://localhost:8089/moderator">Moderator</a>
                             </button>
-                        </div>
-                    </div>
-                </div>
-                    <div class="flex text-white space-x-4 pb-3 ">
 
-                        {% for tag in project.tags %}
-          <div class=" tracking-wide bg-blue-900 rounded-lg p-2 pb-3">{{tag}}
-              <button class="align-middle transition box-content h-6 w-6 space-x-4 space-y-2 bg-blue-500 transform border border-gray-900 hover:bg-gray-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 focus:border-gray-500 focus:bg-gray-400 ">x</button>
-          </div>
-                        {% endfor %}
+            </div>
+      </div>
 
-              <button class=" tracking-wide bg-blue-900 rounded-lg p-2 pb-3 transition box-content space-x-4 space-y-2 bg-blue-500 transform border border-gray-900 hover:bg-gray-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 focus:border-gray-500 focus:bg-gray-400 ">add...</button>
-
-
-        </div>
-            {% endfor %}
-        </div>
-    </section>
-  </body>
+</section>
+    </body>
 </html>
