@@ -16,7 +16,7 @@ services:
   essearchservice:
     container_name: essearch
     build:
-      context: ./es_search_service
+      context: ../src/es_search_service
       dockerfile: Dockerfile
     depends_on:
       - elasticsearch

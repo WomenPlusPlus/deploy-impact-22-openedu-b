@@ -19,7 +19,7 @@ func main() {
 
 	// connect to postgres
 	log.Info("connecting pg")
-	pg, err := service.ConnectPG(ctx, fmt.Sprintf(`postgres://postgres:%s@20.13.34.93:2345/openedub?pool_max_conns=10`, ev.Pgpass), log)
+	pg, err := service.ConnectPG(ctx, fmt.Sprintf(`postgres://postgres:%s@localhost:2345/openedub?pool_max_conns=10`, ev.Pgpass), log)
 
 	if err != nil {
 		log.Fatal("connection to pg failed")

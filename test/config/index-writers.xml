@@ -106,7 +106,7 @@
   </writer>
   <writer id="indexer_elastic_1" class="org.apache.nutch.indexwriter.elastic.ElasticIndexWriter">
     <parameters>
-      <param name="host" value="essearch"/>
+      <param name="host" value="es-container"/>
       <param name="port" value="9200"/>
       <param name="scheme" value="http"/><!-- http or https -->
       <param name="index" value="nutch"/>
@@ -130,7 +130,7 @@
     </writer>
     <writer id="indexer_elastic_rest_1" class="org.apache.nutch.indexwriter.elastic.ElasticRestIndexWriter">
     <parameters>
-      <param name="host" value="essearch"/>
+      <param name="host" value="es-container"/>
       <param name="port" value="9200"/>
       <param name="scheme" value="http"/><!-- http or https -->
       <param name="index" value="nutch"/>

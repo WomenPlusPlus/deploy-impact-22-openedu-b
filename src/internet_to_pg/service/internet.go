@@ -129,7 +129,7 @@ func (db *InternetDB) ReadFromWikiSearch(page string, d chan [][]interface{}, er
 		time.Sleep(10 * time.Second) // too many requests otherwise
 		p = "https://en.wikipedia.org/w/index.php?advancedSearch-current={%22fields%22:{%22plain%22:[%22wiki%22],%22phrase%22:%22education%22}}&limit=500&offset=500&prefix=Wikipedia%3AWikiProject&profile=all&search=wiki+education&title=Special:Search&ns0=1"
 		if err := db.conn.Visit(p); err != nil {
-			db.log.Error("failed to visit techblog", zap.String("page", p), zap.Error(err))
+			db.log.Error("failed to visit wikisearch", zap.String("page", p), zap.Error(err))
 			errChan <- err
 		}
 		d <- data

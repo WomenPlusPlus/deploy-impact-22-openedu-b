@@ -27,7 +27,7 @@ func ConnectES(ctx context.Context, logger *zap.Logger) (*ESDB, error) {
 	}
 	cfg := elasticsearch.Config{
 		Addresses: []string{
-			"http://localhost:9201",
+			"http://localhost:9200",
 		}}
 	es, err := elasticsearch.NewClient(cfg)
 	if err != nil {
