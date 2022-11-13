@@ -7,11 +7,11 @@ authors = ["maffka123 <mstihomirova@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 fastapi = "^0.86.0"
-psycopg2 = "^2.9.5"
 requests = "^2.28.1"
 uvicorn = "^0.19.0"
 Jinja2 = "^3.1.2"
 python-multipart = "^0.0.5"
+psycopg2 = "^2.9.5"
 
 [tool.poetry.dev-dependencies]
 

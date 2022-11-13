@@ -27,7 +27,7 @@ func ConnectES(ctx context.Context, logger *zap.Logger) (*ESDB, error) {
 	}
 	cfg := elasticsearch.Config{
 		Addresses: []string{
-			"http://localhost:9200",
+			"http://4.231.57.204:9200",
 		}}
 	es, err := elasticsearch.NewClient(cfg)
 	if err != nil {
@@ -130,15 +130,18 @@ func (db *ESDB) ReadDocs(ctx context.Context) ([][]interface{}, error) {
 			db.log.Error("failed to parse boost", zap.Error(err))
 			return nil, err
 		}
+		types, content, topic := rankedText(ds["content"].(string))
 		data = append(data, []interface{}{
 			ds["url"].(string),
 			ds["title"].(string),
 			lic,
-			ds["content"].(string),
+			content,
 			"apache_nutch",
 			ds["lang"].(string),
 			t,
 			s,
+			types,
+			topic,
 		})
 
 	}

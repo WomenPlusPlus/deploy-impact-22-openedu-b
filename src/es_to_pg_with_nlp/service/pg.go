@@ -26,7 +26,7 @@ func ConnectPG(ctx context.Context, pgpath string, logger *zap.Logger) (*PGDB, e
 	}
 	db.conn = conn
 
-	_, err = db.conn.Exec(ctx, `
+	_, err = db.conn.Exec(ctx, `drop table public.project_crawled;
 	CREATE TABLE IF NOT EXISTS public.project_crawled 
 	(id serial PRIMARY KEY, 
 		link varchar(500) NOT NULL,
@@ -34,8 +34,8 @@ func ConnectPG(ctx context.Context, pgpath string, logger *zap.Logger) (*PGDB, e
 		license varchar(200), 
 		description varchar(20000) NOT NULL, 
 		author varchar(500),
-		type varchar(100),
-		topic varchar(300),
+		type varchar(500),
+		topic varchar(500),
 		skills varchar(300),
 		lang varchar(10),
 		lastmodified timestamp,
@@ -52,7 +52,7 @@ func ConnectPG(ctx context.Context, pgpath string, logger *zap.Logger) (*PGDB, e
 func (db *PGDB) WriteToPG(ctx context.Context, table string, data [][]interface{}) error {
 	copyCount, err := db.conn.CopyFrom(ctx,
 		pgx.Identifier{"public", table},
-		[]string{"link", "title", "license", "description", "author", "lang", "lastmodified", "rating"},
+		[]string{"link", "title", "license", "description", "author", "lang", "lastmodified", "rating", "type", "topic"},
 		pgx.CopyFromRows(data),
 	)
 	if err != nil {

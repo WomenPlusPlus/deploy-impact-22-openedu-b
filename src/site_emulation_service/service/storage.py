@@ -19,22 +19,52 @@ class PG():
                                       database=self.db,
                                            cursor_factory=psycopg2.extras.DictCursor)
 
-    def select(self):
-        cursor = self.connection.cursor()
+    def select_techblog(self):
         postgreSQL_select_Query = "SELECT row_to_json(row) FROM (select * from public.project_techblog_stage where subject!='' limit 10) row"
-
-        cursor.execute(postgreSQL_select_Query)
-        print("Selecting rows from mobile table using cursor.fetchall")
-        rows = cursor.fetchall()
-        rows2=[]
+        rows = self.select(postgreSQL_select_Query)
+        rows2 = []
         for r in rows:
             rr = []
             for row in r:
                 row["tags"] = row["subject"].split(', ')
                 rr.append(row)
                 rows2.append(row)
+        return rows2
+
+    def get_similar(self, project):
+        postgreSQL_select_Query = f"""
+        with t as (select * from public.similarity_csv where lower(name)=lower('{project}')),
+        top as (select x.*
+        from t, 
+        jsonb_each_text(to_jsonb(t)) as x("key",value) where key!='name' 
+        limit 4)
+        SELECT row_to_json(row) FROM (
+        select * from top
+        left join public.sito_project on lower(title_en)=lower(key)
+        order by value desc
+        ) row
+        """
+        rows = self.select(postgreSQL_select_Query)
+        rows2 = []
+        for r in rows:
+            rr = []
+            for row in r:
+                row["tags"] = ['tag1', 'tag2']
+                row["type"] = 'sometype'
+                rr.append(row)
+                rows2.append(row)
 
         return rows2
+
+
+    def select(self, postgreSQL_select_Query):
+        cursor = self.connection.cursor()
+        cursor.execute(postgreSQL_select_Query)
+        rows = cursor.fetchall()
+
+        return rows
+
+
 
 
 pg: PG = None

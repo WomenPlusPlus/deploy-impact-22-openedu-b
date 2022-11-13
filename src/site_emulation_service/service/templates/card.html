@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+  <section class="bg-white ">
+      <div class="flex p-3 container px-5 py-2 mx-auto lg:px-20">
+            <div class="container border-gray-600 w-1/5 border-2 border-gray-600">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Wikipedia-logo-v2-en.svg" alt="wiki">
+            </div>
+          <div class="container border-gray-600 border-2 border-gray-600">
+              <a href="http://{{app_host}}:8089/">
+              <img src="https://www.openedu.ch/static/sito/img/loghi/wikimedia_ch_logo.svg" alt="openedu">
+                  </a>
+            </div>
+      </div>
+       <div class="container px-2 py-2 mx-auto lg:px-20">
+
+            <div onclick="location.href='http://{{app_host}}:8089/card?id={{projects[0].title_en}}';"
+                    class="flex items-end justify-start w-full transition duration-500 ease-in-out transform bg-gray-200 border-2 border-gray-600 rounded-lg hover:border-white cursor-alias">
+
+                    <div class="bg-blue-300 border-gray-900 rounded-lg space-x-2 space-y-4 absolute top-0 right-0 p-3">{{projects[0].type}}</div>
+                    <div class="space-x-2 space-y-4 absolute bottom-0 right-0">By: {{projects[0].by}}</div>
+
+
+
+                        <div class="relative flex flex-col h-full p-8 ">
+                            <h2 class="mb-4 font-semibold tracking-widest uppercase title-font">
+                                {{projects[0].title_en}}
+                            </h2>
+                            <p class="flex items-center mb-2 text-lg font-normal tracking-wide border-2">
+                                <span
+                                    class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 rounded-full bg-blue-1300">
+
+                                </span>{{projects[0].short_description_en}}
+                            </p>
+                        </div>
+
+                    <div class="w-full xl:w-1/4 md:w-1/4 lg:ml-auto">
+                        <div class="relative flex flex-col h-full p-8">
+                            <button
+                                    class="w-full bg-blue-500 px-4 py-2 mx-auto mt-3 transition duration-500 ease-in-out transform border border-gray-900 rounded-lg text-md hover:bg-gray-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 focus:border-gray-500 focus:bg-gray-400 "><a href="{{projects[0].by_url}}">Visit Site</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                    <div class="flex space-x-2 pb-3 text-xs">
+
+                        {% for tag in projects[0].tags %}
+          <div class="h-7 tracking-wide bg-blue-500 rounded-lg p-2 pb-3 pt-1">{{tag}}</div>
+                        {% endfor %}
+
+        </div>
+                           <h1 class="mb-12 text-3xl font-medium">
+                    See also
+                </h1>
+<div class="flex space-x-2 pb-3 text-xs overflow-hidden">
+            {% for project in projects[1:] %}
+                <div onclick="location.href='http://{{app_host}}:8089/card?id={{project.title_en}}';"
+                    class=" justify-start w-full transition duration-500 ease-in-out transform bg-gray-200 border-2 border-gray-600 rounded-lg hover:border-white cursor-alias">
+
+                    <div class="bg-blue-300 border-gray-900 rounded-lg space-x-2 space-y-4 absolute top-0 right-0 p-3">{{project.type}}</div>
+                    <div class="space-x-2 space-y-4 absolute bottom-0 right-0">By: {{project.by}}</div>
+
+
+
+                        <div class="relative flex-col p-2 w-full">
+                            <h2 class="mb-4 font-semibold tracking-widest uppercase title-font">
+                                {{project.title_en}}
+                            </h2>
+                            <p class="flex items-center mb-2 font-normal tracking-wide border-2">
+                                <span
+                                    class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 rounded-full bg-blue-1300">
+
+                                </span> {{project.short_description_en}}
+                            </p>
+                        </div>
+
+                    <div class="w-full xl:w-1/2 md:w-1/4 lg:ml-auto ">
+                        <div class="relative flex-col p-4">
+                            <button
+                                    class="w-full bg-blue-500 px-4 py-2 mx-auto mt-3 transition duration-500 ease-in-out transform border border-gray-900 rounded-lg text-md hover:bg-gray-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 focus:border-gray-500 focus:bg-gray-400 "><a href="{{project.by_url}}">Visit Site</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}
+    </div>
+        </div>
+
+</section>
+    </body>
+</html>

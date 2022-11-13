@@ -62,7 +62,7 @@ def root(request: Request, pg: storage.PG = Depends(storage.get_pg)) -> dict:  #
     """
     Root GET
     """
-    data = pg.select()
+    data = pg.select_techblog()
     return TEMPLATES.TemplateResponse(
         "moderator.html",
         {"request": request, "projects": data, "app_host": APP_HOST},
@@ -96,5 +96,16 @@ def edit_bom(search: str = Form(...)):
     print(search)
 
     return RedirectResponse(url=f"/search?q={search}", status_code=303)
+
+@api_router.get("/card", status_code=200)
+def root(request: Request, id: Union[str, None] = None, pg: storage.PG = Depends(storage.get_pg)) -> dict:  # 2
+    """
+    Root GET
+    """
+    data = pg.get_similar(id)
+    return TEMPLATES.TemplateResponse(
+        "card.html",
+        {"request": request, "projects": data, "app_host": APP_HOST},
+    )
 
 app.include_router(api_router)
