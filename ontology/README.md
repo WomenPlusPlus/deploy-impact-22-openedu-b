@@ -2,7 +2,10 @@
 
 # Proposed Ontology
 
-This folder is dedicated to everything that involved ontological engineering, modelling the ontology that is the OpenEdu platform. 
+This folder is dedicated to everything that involved ontological engineering, modelling the ontology that is the OpenEdu platform. This folder consists of two files:
+- `open_edu-b-ontology.owl`: This is the ontology file, wherein can be found the entire ontology, written in OWL. 
+- `ontology_image.svg`: This is a visualization of the ontology, done using WebOWL (see below). 
+- `README.md`: This file. 
 
 ## Software Used
 
@@ -16,7 +19,7 @@ On last attempt to run the application, version 2 is not working in the browser.
 
 ## Development Process
 
-Development began from the intial form that would be submitted. From this skeleton, we added more and more things and properties that tied them togehter. 
+Development began from modelling the fields that were present in the intial Django form that the team was given. From this skeleton, we added things and properties that tied them together. Once conversations began with the Product Owner, UI developer and Backend developer, the ontology went through a big rework so that it is easily readable to newcomers.
 
 ## Object Details
 
@@ -29,3 +32,4 @@ An *OpenEdu Content* object refers to any one WikiMedia project, that can be fou
 ### Content Record
 A *Content Record* object is any one object that is included in the OpenEdu Content object. For example, Wikipedia includes many different Content Records, which would be its articles.
 
+### 
