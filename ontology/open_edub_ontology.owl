@@ -13,6 +13,23 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#cardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#cardinality"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -26,15 +43,6 @@
     <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R46veJnU1peWmdGigU805T">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:label xml:lang="en">canInclude</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R6Oq6pCAX4DxiB2nKIM3uq -->
-
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R6Oq6pCAX4DxiB2nKIM3uq">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:label xml:lang="en">counts</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -62,16 +70,6 @@
     <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R7MppmkYtoLKaSLE5z38aY8">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:label xml:lang="en">canBeDefinedBy</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R7RsSJjFXQ1Uz9xN8ZlvdSA -->
-
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R7RsSJjFXQ1Uz9xN8ZlvdSA">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">takes as input</rdfs:comment>
-        <rdfs:label xml:lang="en">accepts</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -138,15 +136,6 @@
     
 
 
-    <!-- http://webprotege.stanford.edu/R9wRLGzWSKiluNZ4n1Aedv -->
-
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R9wRLGzWSKiluNZ4n1Aedv">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:label xml:lang="en">isGivenTo</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://webprotege.stanford.edu/RBObHK7GbqgWhtunjAMmYOm -->
 
     <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RBObHK7GbqgWhtunjAMmYOm">
@@ -165,15 +154,6 @@
     
 
 
-    <!-- http://webprotege.stanford.edu/RBtIWrR9eCm6JxHuzw2wrIp -->
-
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RBtIWrR9eCm6JxHuzw2wrIp">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:label xml:lang="en">generatesAsDeliverable</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://webprotege.stanford.edu/RCQ1b4MSfN4oLteFnLzeIP0 -->
 
     <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RCQ1b4MSfN4oLteFnLzeIP0">
@@ -187,6 +167,15 @@
     <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RCRQyRhn07Gn1Nw6QKR0wGD">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:label xml:lang="en">characterizedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCX0FYCAs9VI2wfZVveIx1T -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RCX0FYCAs9VI2wfZVveIx1T">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">characterizes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -272,6 +261,14 @@
     
 
 
+    <!-- http://www.w3.org/2002/07/owl#cardinality -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#cardinality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -324,6 +321,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">OpenEdu Platform</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
     </owl:Class>
     
 
@@ -395,12 +393,6 @@
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/R8HbGIPlf7GTceyb6XIVWOC">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDpa6yu5Z5Rq9b6PLIckB8R"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/R92LlhQ730SHhNBX2FFw0TS"/>
-                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/R9YkTSbzMthC7ffdGNJNtCR"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Training</rdfs:label>
     </owl:Class>
     
@@ -482,6 +474,7 @@
                 <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/R9bcmj9uc8bw0TiFogrREb"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collection of contents, or a single content</rdfs:comment>
         <rdfs:label xml:lang="en">OpenEdu Content</rdfs:label>
     </owl:Class>
     
@@ -490,34 +483,14 @@
     <!-- http://webprotege.stanford.edu/R9VdzM2CKDJhiS5l94OdkYb -->
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/R9VdzM2CKDJhiS5l94OdkYb">
-        <rdfs:label xml:lang="en">Specification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9YkTSbzMthC7ffdGNJNtCR -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9YkTSbzMthC7ffdGNJNtCR">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9bcmj9uc8bw0TiFogrREb"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/R769BfGl93CU7EUGNU3fejr"/>
-                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/R9YkTSbzMthC7ffdGNJNtCR"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/R7MppmkYtoLKaSLE5z38aY8"/>
+                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/RCX0FYCAs9VI2wfZVveIx1T"/>
                 <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/R9H1AtA0prb9V6WBzuMMWAr"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/RBjh7JwtckwWbwqdWGW5DzQ"/>
-                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/RBWuN8U390YUMhH3NFkw2tW"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Course</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any objects that give character to an OpenEdu content</rdfs:comment>
+        <rdfs:label xml:lang="en">Specification</rdfs:label>
     </owl:Class>
     
 
@@ -538,6 +511,7 @@
                 <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/RDXiOZDhNPoa89CIgUaaWSk"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Refers to a single data point (e.g. article) within a an OpenEdu Content</rdfs:comment>
         <rdfs:label xml:lang="en">Content Record</rdfs:label>
     </owl:Class>
     
@@ -583,7 +557,7 @@
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/R9wgCf9Xy0Db9me6P7A1Dtq">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCEJPt1stQ6jjjSyJY1JCsI"/>
-        <rdfs:label>Age</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To Whom</rdfs:label>
     </owl:Class>
     
 
@@ -625,6 +599,7 @@
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/RBPfX8fvHzaD4enkQ7BPosM">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any software that we might imagine to use</rdfs:comment>
         <rdfs:label xml:lang="en">Software</rdfs:label>
     </owl:Class>
     
@@ -682,6 +657,12 @@
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/RC2oHj0eIvvsZRbRiCYf6L5">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBPfX8fvHzaD4enkQ7BPosM"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/R9IgrNnb9qNNGjYuI7tNirK"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Classifier</rdfs:label>
     </owl:Class>
     
@@ -715,7 +696,7 @@
                 <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/RCdTA5ArVq2SOIuQfORoeQM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Requirement</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Requirements</rdfs:label>
     </owl:Class>
     
 
@@ -763,6 +744,12 @@
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/RCa9Z5ybPaqN4HbeJakYMmQ">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBPfX8fvHzaD4enkQ7BPosM"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/RDiNlfpY6yWft2MWDGe8Llf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Analyser</rdfs:label>
     </owl:Class>
     
@@ -889,13 +876,7 @@
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/RDekhU1ivjQHhtAJho6uXe2">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rc88tCMUPCySbFknqgWcf9"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/RBObHK7GbqgWhtunjAMmYOm"/>
-                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/R9YkTSbzMthC7ffdGNJNtCR"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Course Recommender</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Content Recommender</rdfs:label>
     </owl:Class>
     
 
@@ -974,15 +955,6 @@
     
 
 
-    <!-- http://webprotege.stanford.edu/RDyZ71iCAhiJD0D6mzVVJnw -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RDyZ71iCAhiJD0D6mzVVJnw">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDpa6yu5Z5Rq9b6PLIckB8R"/>
-        <rdfs:label xml:lang="en">Tool</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://webprotege.stanford.edu/REKnbVhitmdutzdw1lsVRe -->
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/REKnbVhitmdutzdw1lsVRe">
@@ -1026,6 +998,12 @@
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/Rc88tCMUPCySbFknqgWcf9">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBPfX8fvHzaD4enkQ7BPosM"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/RBObHK7GbqgWhtunjAMmYOm"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recommender</rdfs:label>
     </owl:Class>
     
@@ -1059,6 +1037,12 @@
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/RoLvZtZMfeLLnmv6uUsFEu">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDgU43F3iCTUd1iNaR0muwc"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/R7ArChoGI2Wit3DUU9LK5L"/>
+                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/R9VdzM2CKDJhiS5l94OdkYb"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://webprotege.stanford.edu/R7ArChoGI2Wit3DUU9LK5L"/>
@@ -1168,7 +1152,6 @@
     <!-- http://webprotege.stanford.edu/R7k7yt98i1hBSciVKBga8wn -->
 
     <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7k7yt98i1hBSciVKBga8wn">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDyZ71iCAhiJD0D6mzVVJnw"/>
         <rdfs:label xml:lang="en">WMCH Map Service</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1291,7 +1274,6 @@
     <!-- http://webprotege.stanford.edu/R8xHAjCaKqD7TP7ALn0SQ1w -->
 
     <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8xHAjCaKqD7TP7ALn0SQ1w">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDyZ71iCAhiJD0D6mzVVJnw"/>
         <rdfs:label xml:lang="en">Wiki2map</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1326,7 +1308,6 @@
     <!-- http://webprotege.stanford.edu/R9OAW5lICSWqqw6Yu2mP9in -->
 
     <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9OAW5lICSWqqw6Yu2mP9in">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDyZ71iCAhiJD0D6mzVVJnw"/>
         <rdfs:label xml:lang="en">Evaluation Dashboard</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1750,6 +1731,20 @@
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RCd8hYIYRLYzpNXqH3unJDv"/>
         <rdfs:label xml:lang="en">Tutors and Trainors</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#cardinality">
+        <rdfs:label xml:lang="en">owl:cardinality</rdfs:label>
+    </rdf:Description>
     
 
 
