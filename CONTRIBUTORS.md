@@ -1,3 +1,0 @@
-Michal
-skjtgi;sbherkg
-Andrina
