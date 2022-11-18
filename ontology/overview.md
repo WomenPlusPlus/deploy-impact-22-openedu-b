@@ -7,7 +7,7 @@
 
 ## Users
 According to our ontology, there are 4 user types:
-- __Admin__ Content Record is the head of the platform. This person determines moderators and controls that the portal functions in a correct way
+- __Admin__ is the head of the platform. This person determines moderators and controls that the portal functions in a correct way
 - __Moderator__ is the person who validates the content and its duration. This person is managed by Admin.
 - __Content Uploader__ is the person who uploads the content to the platform. This person determines the format.
 - __Content Searcher__ is the person who consumes the content and can potentially give feedback to this content.
