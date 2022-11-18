@@ -17,7 +17,7 @@ Talking to the challenge-setter, we further specified key requirements:
 * Limited to CC-by-SA license
 * Focus on content already hosted in the Wiki Universe
 * Use links to refer to existing content instead of uploading material
-* Avoiding duplication is not key. 
+* Avoiding duplication is not key
 * Finding relevant content is important (as even Wiki staff is often unaware)
 
 We identfied the main users as content creator, moderator, content searcher, and admin.
