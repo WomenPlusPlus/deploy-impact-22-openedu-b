@@ -28,7 +28,7 @@ Development began from modelling the fields that were present in the intial Djan
 The *OpenEdu Platform* is a singleton object, that refers to the Wikimedia universe. In particular, it contains many OpenEdu Content objects. 
 
 ### OpenEdu Content
-An *OpenEdu Content* object refers to any one WikiMedia project, that can be found on the [OpenEdu homepage](https://openedu.ch/en/). This means the images, text, title, links and the content of the project is included in this object. _Wiki Loves Monuements_ is an example of an OpenEdu Content object.
+An *OpenEdu Content* object refers to any one WikiMedia project, that can be found on the [OpenEdu homepage](https://openedu.ch/en/). This means the images, text, title, links and the content of the project is included in this object. _Wiki Loves Monuments_ is an example of an OpenEdu Content object.
 
 ### Content Record
 A *Content Record* object is any one object that is included in the OpenEdu Content object. For example, Wikipedia includes many different Content Records, which would be its articles.
