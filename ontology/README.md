@@ -2,7 +2,7 @@
 
 # Proposed Ontology
 
-This folder is dedicated to everything that involved ontological engineering, modelling the ontology that is the OpenEdu platform. This folder consists of two files:
+This folder is dedicated to everything that involved ontological engineering, modelling the ontology that is the OpenEdu platform. This folder consists of three files:
 - `open_edu-b-ontology.owl`: This is the ontology file, wherein can be found the entire ontology, written in OWL. 
 - `ontology_image.svg`: This is a visualization of the ontology, done using WebOWL (see below). 
 - `README.md`: This file. 
