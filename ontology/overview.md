@@ -21,7 +21,7 @@ Content record is the content uploaded by Content Uploader. Every Content record
 -  __Text__: These are __Title__, __Subtitle__ and __Description__ fields. __Text__ supplements __Images__ and __Videos__.
 -  __Video__ 
 
-Moreover, every Content Record can be given a Feedback by Content Searchers giving it a Rating it (from 0 to -  and leaving Comments
+Moreover, every Content Record can be given a Feedback by Content Searchers by giving it a Rating (from 0 to 5) and leaving Comments.
 
 __Content on OpenEdu__ can be specified by:
 -  __Content Type__. This can be:
