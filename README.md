@@ -57,7 +57,7 @@ These three folders are then sub-divided into different modules, which include (
 
 
 ## Contributors
-- Andrina Beuggart: Product Owner
+- Andrina Beuggert: Product Owner
 - Michal Burgunder: Data Scientist (tech lead, ontology)
 - Elena Kameneva: UX/UI Designer
 - Noëline Lepais: Data Scientist (NLP)
