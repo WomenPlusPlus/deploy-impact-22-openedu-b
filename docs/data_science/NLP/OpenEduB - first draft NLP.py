@@ -20,13 +20,13 @@ nltk.download('stopwords')
 
 
 # # Plan :  
-# * [1. Dataset](#Dataset)
-# * [2. Language recognizer](#Language-recognizer)
-# * [3. Translation](#Translation)
-# * [4. Readability](#Readability)
-# * [5. Clean the text](#Clean-the-text)
-# * [6. Determine the topic/skills](#Topics/skills)
-# * [7. Suggest similar content](#Similarity-to-suggest-content)
+# * [1. Dataset]
+# * [2. Language recognizer]
+# * [3. Translation]
+# * [4. Readability]
+# * [5. Clean the text]
+# * [6. Determine the topic/skills]
+# * [7. Suggest similar content]
 
 
 # ## Dataset
@@ -38,7 +38,7 @@ df = df[df['Abstract'].notna()]
 df = df.reset_index()
 df = df.drop(["index"], axis=1)
 print(df)
-#I just keep the title and the abstract to simplify.
+#I just keep the title and the abstract.
 
 
 # ## Language recognizer
@@ -50,7 +50,7 @@ print(df)
 
 # ## Translation 
 
-# In this part, all the text were traduct in all the different languages.
+# In this part, all the text were translated in all the different languages.
 translator = Translator()
 df["text_en"] = [translator.translate(str(df.Abstract[i])).text for i in range(df.shape[0]) ]
 df["text_fr"] = [translator.translate(str(df.Abstract[i]), dest='fr').text for i in range(df.shape[0]) ]
@@ -61,7 +61,8 @@ df = df.drop(columns=["Abstract"])
 
 # ## Readability
 
-# The readability gives us the minimum required grade level to read the text and help us to determine Level and To Whom. I test 3 differents methods and according to the definition of each of them flesch is the best one. I only use english text because readability works better with english. There is only one problem, to use these tools we need at least 100 words so here I duplicated the text to have enough words. 
+# The readability gives us the minimum required grade level to read the text and help us to determine Level and To Whom. I tested 3 differents methods and according to the definition of each of them, flesch is the best one. 
+# I only use english text because readability works better with english. There is only one problem, to use these tools we need at least 100 words so here I duplicated the text to have enough words. 
 df["len"] = [np.ceil(100/len(df.text_en[i].split()))+1 for i in range(df.shape[0]) ]
 df["text_readability"] = [np.repeat(df.text_en[i], df.len[i]) for i in range(df.shape[0]) ]
 #we need to clean the text
@@ -76,7 +77,7 @@ df["text_readability"] = [preprocessor(str(df.text_readability[i])) for i in ran
 df["Dale_Chall"] = [Readability(df.text_readability[i]).dale_chall().grade_levels for i in range(df.shape[0]) ]
 df["ARI"] = [Readability(df.text_readability[i]).ari().grade_levels for i in range(df.shape[0]) ]
 df["flesch"] = [Readability(df.text_readability[i]).flesch().grade_levels for i in range(df.shape[0]) ]
-# site with descirption of all the readability measure https://py-readability-metrics.readthedocs.io/en/latest/flesch.html
+# website with descirption of all the readability measure: https://py-readability-metrics.readthedocs.io/en/latest/flesch.html
  
 
 # ## Clean the text
@@ -113,12 +114,13 @@ for i in range(df.shape[0]):
 
 # ## Topics/skills
 
-# We need enough data to use a model. So, at the beginning, the creator will have to choose the topics and skills manually. When we will have enough data we will use a model maybe Machine Learning, more precisely neural network. they are, right now, the best model to work with NLP. 
+# We need enough data to use a model. So, at the beginning, the creator will have to choose the topics and skills manually. When we will have enough data, we will use a model maybe Machine Learning, more precisely neural network. 
+# They are, right now, the best model to work with NLP. 
 
 
 # ## Similarity to suggest content
 
-# We want to suggest similar content. Here the title of the 3 more similar contents are suggested.
+# We want to suggest similar content. Here the title of the 3 most similar contents are suggested.
 results = pd.DataFrame(columns=["sim", "i"])
 for j in range(df.shape[0]):
     sim = []
