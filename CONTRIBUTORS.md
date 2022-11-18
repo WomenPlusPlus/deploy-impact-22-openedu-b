@@ -1,4 +1,4 @@
-Andrina Beuggart,andrina.beuggert@gmail.com
+Andrina Beuggert,andrina.beuggert@gmail.com
 
 Michal Burgunder,michal_burgunder@yahoo.com
 
