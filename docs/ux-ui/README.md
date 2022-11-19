@@ -9,7 +9,7 @@ The material for this folder can be found in [this Google Drive folder](https://
 - Figma prototype as (zip)
 - User Journey Flows & Ideas (pdf)
 - Typeface Documentation (png)
-- Protoype Walk-through (.mp4)
+- Protoype Walk-through (mp4)
 - Proto-Personas (pdf)
 - OpenEd Team B (fig)
 - Icons & Buttons (png)
