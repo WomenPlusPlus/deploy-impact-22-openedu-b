@@ -57,12 +57,13 @@ These three folders are then sub-divided into different modules, which include (
 
 
 ## Contributors
-- Andrina Beuggert: Product Owner
-- Michal Burgunder: Data Scientist (tech lead, ontology)
-- Elena Kameneva: UX/UI Designer
-- Noëline Lepais: Data Scientist (NLP)
-- Sofia Strukova: Data Scientist (ontology)
-- Ceylan Thompson: Scrum Master
-- Mascha Tikhomirova: Backend
-- Maria Giakoumelou: Team Satellite
+- Andrina Beuggert: Product Owner [(email, main contact person)](emailto:andrina.beuggert@gmail.com)
+- Michal Burgunder: Data Scientist (tech lead, ontology) [(email)](emailto:michal_burgunder@yahoo.com)
+- Maria Giakoumelou: Team Satellite [(email)](emailto:mg.giakoumelou@gmail.com)
+- Elena Kameneva: UX/UI Designer [(email)](emailto:elena.kameneva.eu@gmail.com)
+- Noëline Lepais: Data Scientist (NLP) [(email)](emailto:noeline.lps@outlook.fr)
+- Sofia Strukova: Data Scientist (ontology) [(email)](emailto:strukovas@um.es)
+- Ceylan Thompson: Scrum Master [(email)](emailto:coachingandmentoringlifeskills@gmail.com)
+- Mascha Tikhomirova: Backend [(email)](emailto:mstihomirova@gmail.com)
+
 
