@@ -19,7 +19,7 @@ services:
     container_name: essearch
     hostname: essearch
     build:
-      context: ../src/es_search_service
+      context: ../backend/es_search_service
       dockerfile: Dockerfile
     depends_on:
       - elasticsearch
@@ -31,7 +31,7 @@ services:
   siteservice:
     container_name: siteservice
     build:
-      context: ../src/site_emulation_service
+      context: ../frontend/site_emulation_service
       dockerfile: Dockerfile
     depends_on:
       - elasticsearch
