@@ -49,11 +49,12 @@ The folders are separated into 3 folders:
 - `test`: Any test files that we have produced. 
 
 These three folders are then sub-divided into different modules, which include (depending on the presence of the relevant files):
-* `backend`: architecture, incl. dockers, containers, microservices
-* `data-science`: ontology, NLP code
+* `backend`: source code for containers and microservices
+* `data-science`: ontology, Natural Language Processing (NLP) code
+* `devops`: database, container architecture
 * `frontend`: demo website (linked above)
 * `presentation`: final presentation of 19 Nov 2022 incl. video
-*  `ux-ui`: user journeys, mockups, Figma website
+* `ux-ui`: user journeys, mockups, Figma website
 
 
 ## Contributors
