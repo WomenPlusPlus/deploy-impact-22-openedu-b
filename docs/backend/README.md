@@ -33,7 +33,7 @@ for example by Queing Services (RabbitMQ, Pub/Sub etc.) or by cron-jobs:
 	small service that emulates user working with the openedu website. It has a landing page, moderator form with the projects suggested
 	based on our scrape/crwal/manual data search attempts + auto-generated content. Search page shows search results from elastic, each result can be
 	clicked and suggestions based on NLP model are shown. Demo 
-	[video](https://drive.google.com/file/d/1PjwT7DkbZNVkVdo_3Koq7fxBzcJfMGZH/view?usp=sharing).
+	[video](https://drive.google.com/file/d/1FvMHeAxftxJLcKpqUr3Zmo8cd7flXIas/view?usp=sharing).
 
 
 - [/dev_ops](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/src/dev_ops): docker-compose file.
