@@ -1,7 +1,7 @@
-# OpenEDU
+# OpenEDU-b Backend
 
-The project is built in a form of several microservices running together within a docker-compose environment 
-(should be replced with Kubernetes for production).
+The backend of the project is built in a form of several microservices running together within a docker-compose environment 
+(should be replaced with Kubernetes for production).
 Docker-compose also contains several standart packages such as postgres and elasticsearch, we highly recommend switch to
 fully-managed versions of them in case the whole infrastructure will be located in the commertial cloud (e.g. Azure)
 
@@ -42,6 +42,9 @@ sserving after containers are up.
 
 # Usage
 
-To run tests simply run `docker-compose up -d` from the /dev_ops folder
+To run tests simply run `docker-compose up -d` from the [/dev_ops](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/src/dev_ops) folder.
+One may need a volume for elasticsearch, but docker will help to create it.
 
-For now to run the crawler, one needs to get into the container and trigger `./nutch_sourse/run.sh` inside of it, also `seed.txt` is adjustable. For the future all that can be automated with a cron-job, for example.
+For now to run the crawler, one needs to get into the container and trigger `./nutch_sourse/run.sh` inside of it. 
+`seed.txt` is adjustable seeding point for the crawler to start. 
+For the future all that can be automated with a cron-job, for example.

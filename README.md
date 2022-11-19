@@ -37,7 +37,8 @@ Based on these insights, we built our solution with the following key elements:
 
 [Figma](https://www.figma.com/proto/HEK15WFpaaacBCHUGPL4ak/OpenEdu-http-to-figma?page-id=15[…]2C263%2C0.16&scaling=min-zoom&starting-point-node-id=15%3A1307): to demonstrate the user experience. video & documentation is stored under docs/ux-ui
 
-[Demo website](http://4.231.57.204:8089/): to demonstrate the working integration of backend, crawlers/scrapers, data, and NLP results (for related content). code is stored under src/frontend
+[Demo website](http://4.231.57.204:8089/): to demonstrate the working integration of backend, crawlers/scrapers, data, and NLP results (for related content). 
+Detailed information about the website backend and frontend can be found [here](https://github.com/WomenPlusPlus/deploy-impact-22-openedu-b/tree/main/docs/backend)
 
 
 ## Structure of the Repo
