@@ -13,7 +13,7 @@ services:
       - 9200:9200
     volumes:
       - esdata:/usr/share/elasticsearch/data
-      - ./elasticsearch.yml:~/config/elasticsearch.yml
+      - ./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
 
   essearchservice:
     container_name: essearch
