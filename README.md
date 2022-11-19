@@ -35,9 +35,9 @@ Based on these insights, we built our solution with the following key elements:
 
 ### Protoypes
 
-[Figma mockup](https://www.figma.com/proto/HEK15WFpaaacBCHUGPL4ak/OpenEdu-http-to-figma?page-id=15[…]2C263%2C0.16&scaling=min-zoom&starting-point-node-id=15%3A1307): video & documentation is stored under docs/ux-ui
+[Figma](https://www.figma.com/proto/HEK15WFpaaacBCHUGPL4ak/OpenEdu-http-to-figma?page-id=15[…]2C263%2C0.16&scaling=min-zoom&starting-point-node-id=15%3A1307): to demonstrate the user experience. video & documentation is stored under docs/ux-ui
 
-[Demo website](http://4.231.57.204:8089/): to show working integration of backend, crawlers/scrapers, data, and NLP results (for related content)
+[Demo website](http://4.231.57.204:8089/): to demonstrate the working integration of backend, crawlers/scrapers, data, and NLP results (for related content). code is stored under src/frontend
 
 
 ## Structure of the Repo
